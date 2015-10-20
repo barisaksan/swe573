@@ -1,0 +1,17 @@
+title Mark Issue as Fixed
+
+User->App: Search Issues (my issues)
+App->Server: Get Issues
+note right of Server: Server forms a list of issues
+Server->App: List of issues
+App->User: Show List of Issues
+User->App: Select Issue
+App->Server: Get Issue Details
+note right of Server: Server forms a list of issues
+Server->App: Issue Details
+App->User: Issue Details
+User->App: Mark Issue as Fixed
+App->Server: Mark Fixed
+User->App: Share Issue
+App->Server: Share Issue
+Server->Twitter: Share Issue
