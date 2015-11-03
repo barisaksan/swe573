@@ -1,5 +1,4 @@
-# swe573
-Software Development Practice homework repository
+# Accessibility Violations Tracker android application
 
 kanban board:
 https://waffle.io/barisaksan/swe573
