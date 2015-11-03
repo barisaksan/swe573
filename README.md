@@ -1,4 +1,7 @@
-# Accessibility Violations Tracker android application
+# Accessibility Violations Tracker
+
+This is an android application designed and developed for BOUN SWE 573 course project.
+The aim is to create a social accessibility violations tracker to raise awareness and document accessibility violations in cities.
 
 kanban board:
 https://waffle.io/barisaksan/swe573
