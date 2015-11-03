@@ -1,4 +1,11 @@
+@startuml
+
 title Mark Issue as Fixed
+
+actor User
+participant App
+participant Server
+actor Twitter
 
 User->App: Search Issues (my issues)
 App->Server: Get Issues
@@ -15,3 +22,5 @@ App->Server: Mark Fixed
 User->App: Share Issue
 App->Server: Share Issue
 Server->Twitter: Share Issue
+
+@enduml
