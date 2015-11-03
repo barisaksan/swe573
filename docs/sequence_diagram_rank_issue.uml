@@ -1,4 +1,11 @@
+@startuml
+
 title Rank Issue
+
+actor User
+participant App
+participant Server
+actor Twitter
 
 User->App: Search Issues (nearby)
 App->Server: Get Issues
@@ -12,8 +19,8 @@ Server->App: Issue Details
 App->User: Issue Details
 User->App: Rank Issue
 App->Server: Rank Issue
-User->App: Follow Issue
-App->Server: Follow Issue
-note left of User: After some time
-Server->App: Notify User
-App->User: Show Notification
+User->App: Share Issue
+App->Server: Share Issue
+Server->Twitter: Share Issue
+
+@enduml
