@@ -1,4 +1,6 @@
-title Rank Issue
+@startuml
+
+title Create Issue
 
 User->App: Search Issues (nearby)
 App->Server: Get Issues
@@ -15,3 +17,5 @@ App->Server: Rank Issue
 User->App: Share Issue
 App->Server: Share Issue
 Server->Twitter: Share Issue
+
+@enduml
