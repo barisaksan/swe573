@@ -3,24 +3,27 @@
 title Mark Issue as Fixed
 
 actor User
-participant App
-participant Server
+participant ClientViolationListViewer
+participant ClientSingleViolationViewer
+participant ServerViolationSearcher
+participant ServerViolationUpdater
+participant ServerViolationChangeNotifier
+participant ServerViolationSharer
 actor Twitter
+actor OtherUsers
 
-User->App: Search Issues (my issues)
-App->Server: Get Issues
-note right of Server: Server forms a list of issues
-Server->App: List of issues
-App->User: Show List of Issues
-User->App: Select Issue
-App->Server: Get Issue Details
-note right of Server: Server forms a list of issues
-Server->App: Issue Details
-App->User: Issue Details
-User->App: Mark Issue as Fixed
-App->Server: Mark Fixed
-User->App: Share Issue
-App->Server: Share Issue
-Server->Twitter: Share Issue
+User->ClientViolationListViewer: Search my issues)
+ClientViolationListViewer->ServerViolationSearcher: Search user issues
+note right of ServerViolationSearcher: ServerViolationSearcher forms a list of issues
+ServerViolationSearcher->ClientViolationListViewer: User issues
+User->ClientViolationListViewer: Select an issue
+ClientViolationListViewer->ClientSingleViolationViewer: Display issue
+note right of ClientSingleViolationViewer: ClientSingleViolationViewer displays selected issue details
+User->ClientSingleViolationViewer: Mark issue as fixed
+ClientSingleViolationViewer->ServerViolationUpdater: Update issue details as fixed
+ServerViolationUpdater->ServerViolationChangeNotifier: This issue is updated
+ServerViolationChangeNotifier->OtherUsers: This issue is fixed
+ServerViolationUpdater->ServerViolationSharer: This issue is updated
+ServerViolationSharer->Twitter: This issue is fixed
 
 @enduml
