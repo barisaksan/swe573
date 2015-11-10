@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AccessibilityViolationsReporter</string>
+    <string name="title_violation_detail">Violation Detail</string>
+</resources>
