@@ -1,0 +1,21 @@
+@startuml
+
+title Accessibility Violations
+
+package "Accessibility Violations Server" <<Folder>> {
+  HttpServer <|-- RestApiHandler
+}
+
+package "Accessibility Violations Mobile App" <<Folder>> {
+  ViolationReporter o-- Violations
+  HttpClient <|-- ViolationReporter
+}
+
+package "Accessibility Violations Admin Web App" <<Folder>> {
+  HttpClient <|-- ViolationStatsViewer
+}
+
+"Accessibility Violations Server" <--> "Accessibility Violations Mobile App"
+"Accessibility Violations Server" <--> "Accessibility Violations Admin Web App"
+
+@enduml

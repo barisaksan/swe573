@@ -3,9 +3,14 @@
 title Rank Issue
 
 actor User
-participant App
-participant Server
+participant ClientViolationListViewer
+participant ClientSingleViolationViewer
+participant ServerViolationSearcher
+participant ServerViolationUpdater
+participant ServerViolationChangeNotifier
+participant ServerViolationSharer
 actor Twitter
+actor OtherUsers
 
 User->App: Search Issues (nearby)
 App->Server: Get Issues

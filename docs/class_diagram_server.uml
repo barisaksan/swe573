@@ -1,0 +1,18 @@
+@startuml
+
+RestApiHandler <|-- HttpServer
+RestApiHandler o-- RatingCalculator
+RestApiHandler o-- NearbyCalculator
+RestApiHandler o-- StatsCalculator
+RestApiHandler o-- Search
+ViolationUpdater o-- Violation
+ViolationCreator o-- Violation
+ViolationSharer o-- Violation
+Notifier o-- User
+Authenticator o-- User
+RatingCalculator o-- Violation
+NearbyCalculator o-- Violation
+StatsCalculator o-- Violation
+Search o-- Violation
+
+@enduml
