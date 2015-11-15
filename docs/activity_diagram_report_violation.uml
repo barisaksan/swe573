@@ -1,0 +1,21 @@
+@startuml
+
+title Report Violation
+
+(*) --> "Login Mobile App"
+--> "Press New Violation Button"
+--> [Ramp, Door, Light ...] "Select Violation Type"
+--> [Description, Photo, Location] "Enter Violation Details"
+--> "Press Report Violation Button"
+--> "Server Validates Violation"
+If "valid" then
+--> [true] "Add Violation to Database"
+--> "Generate success message"
+--> "Send message to client"
+else
+--> [false] "Generate failure message"
+--> "Send message to client"
+Endif
+--> (*)
+
+@enduml

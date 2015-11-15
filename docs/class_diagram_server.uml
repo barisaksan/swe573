@@ -1,10 +1,13 @@
 @startuml
 
+title Accessibility Violations Server Class Diagram
+
 RestApiHandler <|-- HttpServer
 RestApiHandler o-- RatingCalculator
 RestApiHandler o-- NearbyCalculator
 RestApiHandler o-- StatsCalculator
 RestApiHandler o-- Search
+RestApiHandler o-- Authenticator
 ViolationUpdater o-- Violation
 ViolationCreator o-- Violation
 ViolationSharer o-- Violation

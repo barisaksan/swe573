@@ -1,0 +1,19 @@
+@startuml
+
+title Accessibility Violations Client Mobile App
+
+ViolationReporter <|-- HttpClient
+ViolationReporter o-- ViolationsListViewer
+LocationReporter <|-- HttpClient
+ViolationReporter 0-- Notifier
+Login <|-- HttpClient
+ViolationsListViewer 0-- Violation
+ViolationsListViewer .. ViolationEditor
+ViolationsListViewer .. ViolationViewer
+ViolationViewer 0-- Violation
+ViolationViewer 0-- Sharer
+Sharer 0-- Violation
+ViolationEditor 0-- Violation
+ViolationEditor 0-- RampAngleCalculator
+
+@enduml

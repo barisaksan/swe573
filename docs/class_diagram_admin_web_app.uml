@@ -1,0 +1,12 @@
+@startuml
+
+title Accessibility Violations Admin Web App
+
+AdminLogin o-- RestClient
+StatsViewer o-- StatsQuery
+StatsQuery o-- RestClient
+ViolationQuery o-- RestClient
+ViolationEditor o-- Violation
+ViolationEditor o-- ViolationQuery
+
+@enduml
