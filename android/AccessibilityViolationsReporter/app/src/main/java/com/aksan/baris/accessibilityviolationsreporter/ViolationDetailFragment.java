@@ -17,7 +17,7 @@ import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
  * in two-pane mode (on tablets) or a {@link ViolationDetailActivity}
  * on handsets.
  */
-public class ViolationDetailFragment extends Fragment {
+public class    ViolationDetailFragment extends Fragment {
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.

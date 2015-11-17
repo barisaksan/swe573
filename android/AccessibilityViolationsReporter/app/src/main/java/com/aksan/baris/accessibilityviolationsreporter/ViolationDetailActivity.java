@@ -1,13 +1,22 @@
 package com.aksan.baris.accessibilityviolationsreporter;
 
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.view.MenuItem;
+
+import com.ning.http.client.AsyncCompletionHandler;
+import com.ning.http.client.AsyncHttpClient;
+import com.ning.http.client.Response;
+
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 /**
  * An activity representing a single Violation detail screen. This
@@ -64,6 +73,10 @@ public class ViolationDetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        RetrieveFeedTask r = new RetrieveFeedTask();
+        r.execute();
+
         int id = item.getItemId();
         if (id == android.R.id.home) {
             // This ID represents the Home or Up button. In the case of this
@@ -76,5 +89,24 @@ public class ViolationDetailActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    class RetrieveFeedTask extends AsyncTask<String, Void, String> {
+        protected String doInBackground(String... urls) {
+            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+            String getViolations = "http://192.168.1.104:8080/AccessibilityViolationReporter/rest/violations/barisaksan";
+            try {
+                Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
+                Log.wtf("test", r.getResponseBody());
+                return r.getResponseBody();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return "";
+        }
     }
 }

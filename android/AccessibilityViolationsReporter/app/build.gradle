@@ -25,4 +25,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:support-v4:23.1.0'
     compile 'com.android.support:design:23.1.0'
+    compile 'com.ning:async-http-client:1.9.31'
+    compile 'io.netty:netty:LATEST_NETTY_3_VERSION'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.slf4j:slf4j-simple:1.6.4'
 }
