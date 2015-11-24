@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.NestedScrollView;
 import android.util.JsonReader;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -87,24 +88,24 @@ public class ViolationDetailFragment extends Fragment {
         return rootView;
     }
 
-    class GetViolationTask extends AsyncTask<String, Void, JSONObject> {
+    class GetViolationTask extends AsyncTask<String, Void, JSONArray> {
 
         Activity activity;
         String id;
-        String url = "http://192.168.1.106:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationTask(Activity activity, String id) {
             this.activity = activity;
             this.id = id;
         }
 
-        protected JSONObject doInBackground(String... urls) {
+        protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
             String getViolations = url + id;
             try {
                 Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
                 Log.wtf("mViolation", r.getResponseBody());
-                return new JSONObject(r.getResponseBody());
+                return new JSONArray(r.getResponseBody());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -114,17 +115,17 @@ public class ViolationDetailFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            return new JSONObject();
+            return new JSONArray();
         }
 
         protected void onPostExecute(JSONArray result) {
-            TextView textView = (TextView) activity.findViewById(R.id.violation_detail);
             try {
-                textView.setText(result.getJSONObject(0).getString("description"));
-                CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
-                if (appBarLayout != null) {
-                    appBarLayout.setTitle(result.getJSONObject(0).getString("type"));
-                }
+                TextView detail = (TextView) activity.findViewById(R.id.violation_detail);
+                detail.setText(result.getJSONObject(0).getString("description"));
+                TextView location = (TextView)activity.findViewById(R.id.violation_location);
+                location.setText(result.getJSONObject(0).getString("location"));
+                TextView reporter = (TextView)activity.findViewById(R.id.violation_reporter);
+                reporter.setText(result.getJSONObject(0).getString("reporter"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

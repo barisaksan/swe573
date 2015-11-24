@@ -1,6 +1,8 @@
 package com.aksan.baris.accessibilityviolationsreporter;
 
+import android.app.Activity;
 import android.os.AsyncTask;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +12,15 @@ import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.ning.http.client.AsyncCompletionHandler;
 import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.Response;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
@@ -27,7 +34,8 @@ import java.util.concurrent.ExecutionException;
  * This activity is mostly just a 'shell' activity containing nothing
  * more than a {@link ViolationDetailFragment}.
  */
-public class ViolationDetailActivity extends AppCompatActivity {
+public class ViolationDetailActivity extends AppCompatActivity
+        implements CommentListFragment.Callbacks {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +76,16 @@ public class ViolationDetailActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.violation_detail_container, fragment)
                     .commit();
+
+            CommentListFragment fragment2 = new CommentListFragment();
+            fragment2.setArguments(arguments);
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.violation_detail_comments, fragment2)
+                    .commit();
         }
+
+        GetViolationTask r = new GetViolationTask(this, getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID));
+        r.execute();
     }
 
     @Override
@@ -86,5 +103,80 @@ public class ViolationDetailActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onItemSelected(String id) {
+        //do nothing
+    }
+
+    class GetViolationTask extends AsyncTask<String, Void, JSONArray> {
+
+        Activity activity;
+        String id;
+        String url = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest/violations/";
+
+        public GetViolationTask(Activity activity, String id) {
+            this.activity = activity;
+            this.id = id;
+        }
+
+        protected JSONArray doInBackground(String... urls) {
+            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+            String getViolations = url + id;
+            try {
+                Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
+                Log.wtf("mViolation", r.getResponseBody());
+                return new JSONArray(r.getResponseBody());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return new JSONArray();
+        }
+
+        protected void onPostExecute(JSONArray result) {
+            try {
+                Toolbar toolbar = (Toolbar) activity.findViewById(R.id.detail_toolbar);
+                toolbar.setTitle(result.getJSONObject(0).getString("type"));
+                toolbar.setSubtitle(result.getJSONObject(0).getString("reporter"));
+                ImageView detailImage = (ImageView) activity.findViewById(R.id.detail_image);
+                String type = result.getJSONObject(0).getString("type");
+                switch (type) {
+                    case "bump":
+                        detailImage.setImageDrawable(ContextCompat.getDrawable(
+                                activity.getApplicationContext(),
+                                R.drawable.bump_noun_37451_cc));
+                        break;
+                    case "ramp":
+                        detailImage.setImageDrawable(ContextCompat.getDrawable(
+                                activity.getApplicationContext(),
+                                R.drawable.ramp_noun_169108_cc));
+                        break;
+                    case "bus_stop":
+                        detailImage.setImageDrawable(ContextCompat.getDrawable(
+                                activity.getApplicationContext(),
+                                R.drawable.bus_stop_noun_19258_cc));
+                        break;
+                    case "car_park":
+                        detailImage.setImageDrawable(ContextCompat.getDrawable(
+                                activity.getApplicationContext(),
+                                R.drawable.car_park_noun_157120_cc));
+                        break;
+                    case "pavement":
+                        detailImage.setImageDrawable(ContextCompat.getDrawable(
+                                activity.getApplicationContext(),
+                                R.drawable.pavement_noun_145921_cc));
+                        break;
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

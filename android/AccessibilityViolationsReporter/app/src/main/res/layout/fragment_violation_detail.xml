@@ -1,5 +1,46 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/violation_detail"
-    style="?android:attr/textAppearanceLarge" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:padding="16dp" android:textIsSelectable="true"
-    tools:context=".ViolationDetailFragment" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/violation_detail_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/violation_detail"
+        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
+        tools:context=".ViolationDetailFragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location" />
+
+    <TextView android:id="@+id/violation_location"
+        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
+        tools:context=".ViolationDetailFragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reporter" />
+
+    <TextView android:id="@+id/violation_reporter"
+        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
+        tools:context=".ViolationDetailFragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Comments" />
+
+    <android.support.v4.widget.NestedScrollView android:id="@+id/violation_detail_comments"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

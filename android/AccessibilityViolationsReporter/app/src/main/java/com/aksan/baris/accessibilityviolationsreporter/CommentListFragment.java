@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.Comment;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
 import com.ning.http.client.AsyncHttpClient;
@@ -17,13 +18,11 @@ import com.ning.http.client.Response;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -35,7 +34,9 @@ import java.util.concurrent.ExecutionException;
  * Activities containing this fragment MUST implement the {@link Callbacks}
  * interface.
  */
-public class ViolationListFragment extends ListFragment {
+public class CommentListFragment extends ListFragment {
+
+    public static final String ARG_ITEM_ID = "item_id";
 
     public HashMap<Integer, String> positionToId = new HashMap<Integer, String>();
 
@@ -82,22 +83,15 @@ public class ViolationListFragment extends ListFragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ViolationListFragment() {
+    public CommentListFragment() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*
-        // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
-                getActivity(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                DummyContent.ITEMS));
-*/
+
         Activity activity = this.getActivity();
-        GetAllViolationsTask r = new GetAllViolationsTask(activity);
+        GetCommentsTask r = new GetCommentsTask(activity, getArguments().getString(ARG_ITEM_ID));
         r.execute();
     }
 
@@ -172,20 +166,23 @@ public class ViolationListFragment extends ListFragment {
         mActivatedPosition = position;
     }
 
-    class GetAllViolationsTask extends AsyncTask<String, Void, JSONArray> {
+    class GetCommentsTask extends AsyncTask<String, Void, JSONArray> {
 
         Activity activity;
+        String id;
         String url = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest/violations/";
 
-        public GetAllViolationsTask(Activity activity) {
+        public GetCommentsTask(Activity activity, String id) {
             this.activity = activity;
+            this.id = id;
         }
 
         protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
-            String getViolations = url;
+            String getViolations = url + id + "/comments";
             try {
                 Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
+                Log.wtf("mViolation", r.getResponseBody());
                 return new JSONArray(r.getResponseBody());
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -202,14 +199,13 @@ public class ViolationListFragment extends ListFragment {
         protected void onPostExecute(JSONArray result) {
             positionToId.clear();
             try {
-                List<Violation> list = new ArrayList<Violation>();
+                List<Comment> list = new ArrayList<Comment>();
                 for(int i = 0; i < result.length(); i++){
-                    Violation v = new Violation(result.getJSONObject(i));
+                    Comment v = new Comment(result.getJSONObject(i));
                     list.add(v);
-                    positionToId.put(i, v.getId());
                 }
-                setListAdapter(new ArrayAdapter<Violation>(
-                        getActivity(),
+                setListAdapter(new ArrayAdapter<Comment>(
+                        activity,
                         android.R.layout.simple_list_item_activated_1,
                         list));
 

@@ -19,7 +19,14 @@ public class Violation {
     }
 
     public String toString() {
-        return description;
+        String str = description;
+        try {
+            JSONObject l = new JSONObject(location);
+            str = "[" + type + "]" + " @" + l.getString("name") + ": " + description;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return str;
     }
 
     public String getId() {
