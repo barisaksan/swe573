@@ -123,7 +123,11 @@ public class ViolationDetailFragment extends Fragment {
                 TextView detail = (TextView) activity.findViewById(R.id.violation_detail);
                 detail.setText(result.getJSONObject(0).getString("description"));
                 TextView location = (TextView)activity.findViewById(R.id.violation_location);
-                location.setText(result.getJSONObject(0).getString("location"));
+                location.setText(
+                        result.getJSONObject(0).getJSONObject("location").getString("name")
+                        + " ("
+                        + result.getJSONObject(0).getJSONObject("location").getString("coordinates")
+                        + ")" );
                 TextView reporter = (TextView)activity.findViewById(R.id.violation_reporter);
                 reporter.setText(result.getJSONObject(0).getString("reporter"));
             } catch (JSONException e) {
