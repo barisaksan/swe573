@@ -2,6 +2,7 @@ package aksan.access.rest;
 
 import com.mongodb.*;
 import com.mongodb.util.JSON;
+import org.bson.types.ObjectId;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -15,27 +16,64 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Path("/violations")
+@Path("/")
 public class RestServer {
  
 	@GET
-	@Path("/{param}")
-	public Response getViolations(@PathParam("param") String msg) throws UnknownHostException {
+	@Path("/violations")
+	public Response getViolations() throws UnknownHostException {
 
         MongoClient mongo = new MongoClient("localhost", 27017);
         DB db = mongo.getDB("access");
         DBCollection collection = db.getCollection("violations");
-
-        DBCursor results = collection.find(new BasicDBObject("reporter", msg));
-
-        //DBCursor cursor = collection.find(new BasicDBObject("_id", msg));
-
-		//return Response.status(200).entity(Integer.toString(results.size())).build();
-        return Response.status(200).entity(results.next().toString()).build();
+        DBCursor results = collection.find();
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
 	}
 
+    @GET
+    @Path("/violations/{id}")
+    public Response getViolations(@PathParam("id") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("violations");
+        DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(msg)));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/violations/{id}/comments")
+    public Response getCommentsByViolation(@PathParam("id") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("comments");
+        DBCursor results = collection.find(new BasicDBObject("violation_id", msg));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/violations/{id}/ratings")
+    public Response getRatingsByViolation(@PathParam("id") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("ratings");
+        DBCursor results = collection.find(new BasicDBObject("violation_id", msg));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
 	@POST
-	public Response postViolations(@PathParam("param") String msg) {
+    @Path("/violations/{id}")
+    public Response postViolations(@PathParam("id") String msg) {
         String output = "POST";
         try {
             MongoClient mongo = new MongoClient("localhost", 27017);
@@ -72,7 +110,8 @@ public class RestServer {
     }
 	
 	@PUT
-	public Response putViolations(@PathParam("param") String msg) {
+    @Path("/violations/{id}")
+    public Response putViolations(@PathParam("id") String msg) {
  
 		String output = "Jersey put : " + msg;
  
@@ -80,10 +119,88 @@ public class RestServer {
 	}
 	
 	@DELETE
-	public Response deleteViolations(@PathParam("param") String msg) {
+    @Path("/violations/{id}")
+    public Response deleteViolations(@PathParam("id") String msg) {
  
 		String output = "Jersey delete : " + msg;
  
 		return Response.status(200).entity(output).build();
 	}
+
+    @GET
+    @Path("/users")
+    public Response getUsers() throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("users");
+        DBCursor results = collection.find();
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/users/{username}")
+    public Response getUsers(@PathParam("username") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("users");
+        DBCursor results = collection.find(new BasicDBObject("username", msg));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/comments")
+    public Response getComments() throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("comments");
+        DBCursor results = collection.find();
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/comments/{username}")
+    public Response getComments(@PathParam("username") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("comments");
+        DBCursor results = collection.find(new BasicDBObject("user", msg));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/ratings")
+    public Response getRatings() throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("ratings");
+        DBCursor results = collection.find();
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();
+    }
+
+    @GET
+    @Path("/ratings/{username}")
+    public Response getRatings(@PathParam("username") String msg) throws UnknownHostException {
+
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("access");
+        DBCollection collection = db.getCollection("ratings");
+        DBCursor results = collection.find(new BasicDBObject("user", msg));
+        JSON json = new JSON();
+        String serialize = json.serialize(results);
+        return Response.status(200).entity(serialize).build();    }
 }

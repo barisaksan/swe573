@@ -74,9 +74,6 @@ public class ViolationDetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        RetrieveFeedTask r = new RetrieveFeedTask();
-        r.execute();
-
         int id = item.getItemId();
         if (id == android.R.id.home) {
             // This ID represents the Home or Up button. In the case of this
@@ -89,24 +86,5 @@ public class ViolationDetailActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    class RetrieveFeedTask extends AsyncTask<String, Void, String> {
-        protected String doInBackground(String... urls) {
-            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
-            String getViolations = "http://192.168.1.104:8080/AccessibilityViolationReporter/rest/violations/barisaksan";
-            try {
-                Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
-                Log.wtf("test", r.getResponseBody());
-                return r.getResponseBody();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return "";
-        }
     }
 }

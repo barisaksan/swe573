@@ -1,0 +1,674 @@
+2015-11-22T23:42:52.207+0200 W -        [initandlisten] Detected unclean shutdown - C:\Users\baris\Desktop\swe573\swe573\mongodb\data\mongod.lock is not empty.
+2015-11-22T23:42:52.224+0200 I JOURNAL  [initandlisten] journal dir=C:\Users\baris\Desktop\swe573\swe573\mongodb\data\journal
+2015-11-22T23:42:52.224+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:42:52.225+0200 I JOURNAL  [initandlisten] recover begin
+2015-11-22T23:42:52.225+0200 I JOURNAL  [initandlisten] recover lsn: 0
+2015-11-22T23:42:52.226+0200 I JOURNAL  [initandlisten] recover C:\Users\baris\Desktop\swe573\swe573\mongodb\data\journal\j._0
+2015-11-22T23:42:52.236+0200 I JOURNAL  [initandlisten] recover cleaning up
+2015-11-22T23:42:52.237+0200 I JOURNAL  [initandlisten] removeJournalFiles
+2015-11-22T23:42:52.238+0200 I JOURNAL  [initandlisten] recover done
+2015-11-22T23:42:52.247+0200 I JOURNAL  [durability] Durability thread started
+2015-11-22T23:42:52.247+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-11-22T23:42:52.253+0200 I CONTROL  [initandlisten] MongoDB starting : pid=7536 port=27017 dbpath=C:\Users\baris\Desktop\swe573\swe573\mongodb\data 64-bit host=vaio
+2015-11-22T23:42:52.253+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-11-22T23:42:52.253+0200 I CONTROL  [initandlisten] db version v3.0.7
+2015-11-22T23:42:52.254+0200 I CONTROL  [initandlisten] git version: 6ce7cbe8c6b899552dadd907604559806aa2e9bd
+2015-11-22T23:42:52.254+0200 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-11-22T23:42:52.254+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-11-22T23:42:52.254+0200 I CONTROL  [initandlisten] options: { config: "C:\Users\baris\Desktop\swe573\swe573\mongodb\mongo.config", diaglog: 3, storage: { dbPath: "C:\Users\baris\Desktop\swe573\swe573\mongodb\data" }, systemLog: { destination: "file", path: "C:\Users\baris\Desktop\swe573\swe573\mongodb\log\mongo.log" } }
+2015-11-22T23:42:52.412+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-11-22T23:43:52.234+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:44:21.917+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60920 #1 (1 connection now open)
+2015-11-22T23:44:21.967+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60921 #2 (2 connections now open)
+2015-11-22T23:44:52.233+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:45:52.232+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:46:52.257+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:47:52.237+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:48:29.663+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61303 #3 (3 connections now open)
+2015-11-22T23:48:29.680+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61304 #4 (4 connections now open)
+2015-11-22T23:48:49.698+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61328 #5 (5 connections now open)
+2015-11-22T23:48:49.719+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61329 #6 (6 connections now open)
+2015-11-22T23:48:52.245+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:49:52.251+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:50:52.411+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:51:52.304+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:52:52.302+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:53:52.307+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:54:52.306+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:55:37.505+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63142 #7 (7 connections now open)
+2015-11-22T23:55:37.512+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63143 #8 (8 connections now open)
+2015-11-22T23:55:52.309+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:56:52.304+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:57:52.308+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:58:52.308+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-22T23:59:52.316+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:00:52.311+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:01:46.860+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65393 #9 (9 connections now open)
+2015-11-23T00:01:46.864+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65394 #10 (10 connections now open)
+2015-11-23T00:01:52.319+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:01:53.701+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65439 #11 (11 connections now open)
+2015-11-23T00:01:53.703+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65440 #12 (12 connections now open)
+2015-11-23T00:01:56.371+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65457 #13 (13 connections now open)
+2015-11-23T00:01:56.373+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65458 #14 (14 connections now open)
+2015-11-23T00:01:58.949+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65475 #15 (15 connections now open)
+2015-11-23T00:01:58.952+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65476 #16 (16 connections now open)
+2015-11-23T00:02:03.379+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65507 #17 (17 connections now open)
+2015-11-23T00:02:03.382+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65508 #18 (18 connections now open)
+2015-11-23T00:02:05.474+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65521 #19 (19 connections now open)
+2015-11-23T00:02:05.477+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65522 #20 (20 connections now open)
+2015-11-23T00:02:07.804+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49154 #21 (21 connections now open)
+2015-11-23T00:02:07.807+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49155 #22 (22 connections now open)
+2015-11-23T00:02:52.319+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:03:52.322+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:04:52.315+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:05:52.320+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:06:52.320+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:07:24.546+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51141 #23 (23 connections now open)
+2015-11-23T00:07:24.549+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51142 #24 (24 connections now open)
+2015-11-23T00:07:27.692+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51164 #25 (25 connections now open)
+2015-11-23T00:07:27.694+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51165 #26 (26 connections now open)
+2015-11-23T00:07:52.328+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:08:52.322+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:09:52.334+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:10:52.337+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:11:52.323+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:12:52.324+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:13:52.327+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:14:52.341+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:15:22.574+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54191 #27 (27 connections now open)
+2015-11-23T00:15:22.593+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54192 #28 (28 connections now open)
+2015-11-23T00:15:38.926+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54289 #29 (29 connections now open)
+2015-11-23T00:15:38.944+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54290 #30 (30 connections now open)
+2015-11-23T00:15:48.835+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54350 #31 (31 connections now open)
+2015-11-23T00:15:48.853+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54352 #32 (32 connections now open)
+2015-11-23T00:15:52.327+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:15:52.476+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54375 #33 (33 connections now open)
+2015-11-23T00:15:52.498+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54376 #34 (34 connections now open)
+2015-11-23T00:15:55.706+0200 I NETWORK  [conn29] end connection 127.0.0.1:54289 (33 connections now open)
+2015-11-23T00:15:55.706+0200 I NETWORK  [conn30] end connection 127.0.0.1:54290 (33 connections now open)
+2015-11-23T00:15:56.191+0200 I NETWORK  [conn32] end connection 127.0.0.1:54352 (31 connections now open)
+2015-11-23T00:15:56.192+0200 I NETWORK  [conn31] end connection 127.0.0.1:54350 (30 connections now open)
+2015-11-23T00:15:57.678+0200 I NETWORK  [conn28] end connection 127.0.0.1:54192 (29 connections now open)
+2015-11-23T00:15:57.679+0200 I NETWORK  [conn27] end connection 127.0.0.1:54191 (28 connections now open)
+2015-11-23T00:15:58.840+0200 I NETWORK  [conn6] end connection 127.0.0.1:61329 (27 connections now open)
+2015-11-23T00:15:58.841+0200 I NETWORK  [conn5] end connection 127.0.0.1:61328 (26 connections now open)
+2015-11-23T00:15:59.927+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54421 #35 (27 connections now open)
+2015-11-23T00:15:59.948+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54422 #36 (28 connections now open)
+2015-11-23T00:16:02.581+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54439 #37 (29 connections now open)
+2015-11-23T00:16:02.598+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54440 #38 (30 connections now open)
+2015-11-23T00:16:52.328+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:17:46.190+0200 I NETWORK  [conn36] end connection 127.0.0.1:54422 (29 connections now open)
+2015-11-23T00:17:46.190+0200 I NETWORK  [conn35] end connection 127.0.0.1:54421 (28 connections now open)
+2015-11-23T00:17:47.141+0200 I NETWORK  [conn38] end connection 127.0.0.1:54440 (27 connections now open)
+2015-11-23T00:17:47.142+0200 I NETWORK  [conn37] end connection 127.0.0.1:54439 (26 connections now open)
+2015-11-23T00:17:48.266+0200 I NETWORK  [conn34] end connection 127.0.0.1:54376 (25 connections now open)
+2015-11-23T00:17:48.267+0200 I NETWORK  [conn33] end connection 127.0.0.1:54375 (24 connections now open)
+2015-11-23T00:17:50.963+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55098 #39 (25 connections now open)
+2015-11-23T00:17:50.982+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55099 #40 (26 connections now open)
+2015-11-23T00:17:52.334+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:18:09.912+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55215 #41 (27 connections now open)
+2015-11-23T00:18:09.932+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55216 #42 (28 connections now open)
+2015-11-23T00:18:23.888+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55303 #43 (29 connections now open)
+2015-11-23T00:18:23.904+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55304 #44 (30 connections now open)
+2015-11-23T00:18:36.400+0200 I NETWORK  [conn42] end connection 127.0.0.1:55216 (29 connections now open)
+2015-11-23T00:18:36.401+0200 I NETWORK  [conn41] end connection 127.0.0.1:55215 (28 connections now open)
+2015-11-23T00:18:36.859+0200 I NETWORK  [conn44] end connection 127.0.0.1:55304 (27 connections now open)
+2015-11-23T00:18:36.860+0200 I NETWORK  [conn43] end connection 127.0.0.1:55303 (26 connections now open)
+2015-11-23T00:18:39.210+0200 I NETWORK  [conn40] end connection 127.0.0.1:55099 (25 connections now open)
+2015-11-23T00:18:39.211+0200 I NETWORK  [conn39] end connection 127.0.0.1:55098 (24 connections now open)
+2015-11-23T00:18:40.868+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55407 #45 (25 connections now open)
+2015-11-23T00:18:40.884+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55408 #46 (26 connections now open)
+2015-11-23T00:18:52.331+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:19:52.333+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:20:52.337+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:21:16.029+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56366 #47 (27 connections now open)
+2015-11-23T00:21:16.031+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56367 #48 (28 connections now open)
+2015-11-23T00:21:40.368+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56513 #49 (29 connections now open)
+2015-11-23T00:21:40.390+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56515 #50 (30 connections now open)
+2015-11-23T00:21:42.684+0200 I NETWORK  [conn50] end connection 127.0.0.1:56515 (29 connections now open)
+2015-11-23T00:21:42.685+0200 I NETWORK  [conn49] end connection 127.0.0.1:56513 (28 connections now open)
+2015-11-23T00:21:44.301+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56539 #51 (29 connections now open)
+2015-11-23T00:21:44.317+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56540 #52 (30 connections now open)
+2015-11-23T00:21:52.333+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:22:52.339+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:23:52.336+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:24:52.339+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:25:52.341+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:26:52.346+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:27:14.176+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58573 #53 (31 connections now open)
+2015-11-23T00:27:14.198+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58574 #54 (32 connections now open)
+2015-11-23T00:27:16.391+0200 I NETWORK  [conn54] end connection 127.0.0.1:58574 (31 connections now open)
+2015-11-23T00:27:16.393+0200 I NETWORK  [conn53] end connection 127.0.0.1:58573 (30 connections now open)
+2015-11-23T00:27:17.630+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58597 #55 (31 connections now open)
+2015-11-23T00:27:17.648+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58598 #56 (32 connections now open)
+2015-11-23T00:27:52.350+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:28:01.555+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58873 #57 (33 connections now open)
+2015-11-23T00:28:01.574+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58874 #58 (34 connections now open)
+2015-11-23T00:28:22.308+0200 I NETWORK  [conn52] end connection 127.0.0.1:56540 (33 connections now open)
+2015-11-23T00:28:22.309+0200 I NETWORK  [conn51] end connection 127.0.0.1:56539 (32 connections now open)
+2015-11-23T00:28:22.776+0200 I NETWORK  [conn56] end connection 127.0.0.1:58598 (31 connections now open)
+2015-11-23T00:28:22.777+0200 I NETWORK  [conn55] end connection 127.0.0.1:58597 (30 connections now open)
+2015-11-23T00:28:23.361+0200 I NETWORK  [conn58] end connection 127.0.0.1:58874 (29 connections now open)
+2015-11-23T00:28:23.362+0200 I NETWORK  [conn57] end connection 127.0.0.1:58873 (28 connections now open)
+2015-11-23T00:28:24.602+0200 I NETWORK  [conn46] end connection 127.0.0.1:55408 (27 connections now open)
+2015-11-23T00:28:24.603+0200 I NETWORK  [conn45] end connection 127.0.0.1:55407 (26 connections now open)
+2015-11-23T00:28:36.633+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59092 #59 (27 connections now open)
+2015-11-23T00:28:36.650+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59093 #60 (28 connections now open)
+2015-11-23T00:28:39.096+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59108 #61 (29 connections now open)
+2015-11-23T00:28:39.114+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59110 #62 (30 connections now open)
+2015-11-23T00:28:40.938+0200 I NETWORK  [conn60] end connection 127.0.0.1:59093 (29 connections now open)
+2015-11-23T00:28:40.939+0200 I NETWORK  [conn59] end connection 127.0.0.1:59092 (28 connections now open)
+2015-11-23T00:28:52.347+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:29:52.346+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:30:52.349+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:31:52.358+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:32:42.745+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60608 #63 (29 connections now open)
+2015-11-23T00:32:42.763+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60609 #64 (30 connections now open)
+2015-11-23T00:32:52.359+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:33:46.556+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61011 #65 (31 connections now open)
+2015-11-23T00:33:46.574+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61012 #66 (32 connections now open)
+2015-11-23T00:33:52.353+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:34:52.359+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:35:52.354+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:36:52.354+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:37:52.353+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:38:52.359+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:39:52.359+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:40:52.360+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:41:52.359+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:42:52.360+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:43:52.379+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:44:52.375+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:45:52.366+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:46:52.368+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn1] end connection 127.0.0.1:60920 (31 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn7] end connection 127.0.0.1:63142 (30 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn8] end connection 127.0.0.1:63143 (30 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn9] end connection 127.0.0.1:65393 (29 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn24] end connection 127.0.0.1:51142 (29 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn11] end connection 127.0.0.1:65439 (28 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn2] end connection 127.0.0.1:60921 (27 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn10] end connection 127.0.0.1:65394 (25 connections now open)
+2015-11-23T00:47:05.675+0200 I NETWORK  [conn13] end connection 127.0.0.1:65457 (26 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn12] end connection 127.0.0.1:65440 (23 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn15] end connection 127.0.0.1:65475 (22 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn14] end connection 127.0.0.1:65458 (21 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn17] end connection 127.0.0.1:65507 (20 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn16] end connection 127.0.0.1:65476 (19 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn19] end connection 127.0.0.1:65521 (18 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn18] end connection 127.0.0.1:65508 (17 connections now open)
+2015-11-23T00:47:05.676+0200 I NETWORK  [conn21] end connection 127.0.0.1:49154 (16 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn23] end connection 127.0.0.1:51141 (15 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn25] end connection 127.0.0.1:51164 (14 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn20] end connection 127.0.0.1:65522 (15 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn22] end connection 127.0.0.1:49155 (14 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn47] end connection 127.0.0.1:56366 (11 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn26] end connection 127.0.0.1:51165 (11 connections now open)
+2015-11-23T00:47:05.677+0200 I NETWORK  [conn48] end connection 127.0.0.1:56367 (8 connections now open)
+2015-11-23T00:47:21.540+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49576 #67 (9 connections now open)
+2015-11-23T00:47:21.595+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49578 #68 (10 connections now open)
+2015-11-23T00:47:30.504+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49640 #69 (11 connections now open)
+2015-11-23T00:47:30.507+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49641 #70 (12 connections now open)
+2015-11-23T00:47:37.129+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49684 #71 (13 connections now open)
+2015-11-23T00:47:37.133+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49685 #72 (14 connections now open)
+2015-11-23T00:47:44.445+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49734 #73 (15 connections now open)
+2015-11-23T00:47:44.448+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49735 #74 (16 connections now open)
+2015-11-23T00:47:49.497+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49769 #75 (17 connections now open)
+2015-11-23T00:47:49.504+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49770 #76 (18 connections now open)
+2015-11-23T00:47:52.368+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:47:52.913+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49793 #77 (19 connections now open)
+2015-11-23T00:47:52.916+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49794 #78 (20 connections now open)
+2015-11-23T00:47:57.217+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49821 #79 (21 connections now open)
+2015-11-23T00:47:57.221+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49822 #80 (22 connections now open)
+2015-11-23T00:48:10.512+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49908 #81 (23 connections now open)
+2015-11-23T00:48:10.515+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49909 #82 (24 connections now open)
+2015-11-23T00:48:52.368+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:49:00.902+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50227 #83 (25 connections now open)
+2015-11-23T00:49:00.907+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50228 #84 (26 connections now open)
+2015-11-23T00:49:52.370+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:50:52.370+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:51:06.585+0200 I NETWORK  [conn68] end connection 127.0.0.1:49578 (25 connections now open)
+2015-11-23T00:51:06.585+0200 I NETWORK  [conn67] end connection 127.0.0.1:49576 (25 connections now open)
+2015-11-23T00:51:06.585+0200 I NETWORK  [conn69] end connection 127.0.0.1:49640 (25 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn72] end connection 127.0.0.1:49685 (23 connections now open)
+2015-11-23T00:51:06.585+0200 I NETWORK  [conn71] end connection 127.0.0.1:49684 (24 connections now open)
+2015-11-23T00:51:06.585+0200 I NETWORK  [conn70] end connection 127.0.0.1:49641 (25 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn73] end connection 127.0.0.1:49734 (21 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn74] end connection 127.0.0.1:49735 (21 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn75] end connection 127.0.0.1:49769 (20 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn76] end connection 127.0.0.1:49770 (19 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn77] end connection 127.0.0.1:49793 (18 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn78] end connection 127.0.0.1:49794 (17 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn79] end connection 127.0.0.1:49821 (15 connections now open)
+2015-11-23T00:51:06.586+0200 I NETWORK  [conn80] end connection 127.0.0.1:49822 (13 connections now open)
+2015-11-23T00:51:06.587+0200 I NETWORK  [conn81] end connection 127.0.0.1:49908 (11 connections now open)
+2015-11-23T00:51:06.587+0200 I NETWORK  [conn82] end connection 127.0.0.1:49909 (11 connections now open)
+2015-11-23T00:51:06.587+0200 I NETWORK  [conn83] end connection 127.0.0.1:50227 (10 connections now open)
+2015-11-23T00:51:06.587+0200 I NETWORK  [conn84] end connection 127.0.0.1:50228 (10 connections now open)
+2015-11-23T00:51:24.002+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51139 #85 (9 connections now open)
+2015-11-23T00:51:24.051+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51140 #86 (10 connections now open)
+2015-11-23T00:51:38.893+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51232 #87 (11 connections now open)
+2015-11-23T00:51:38.896+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51233 #88 (12 connections now open)
+2015-11-23T00:51:46.142+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51278 #89 (13 connections now open)
+2015-11-23T00:51:46.146+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51279 #90 (14 connections now open)
+2015-11-23T00:51:51.655+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51314 #91 (15 connections now open)
+2015-11-23T00:51:51.660+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51315 #92 (16 connections now open)
+2015-11-23T00:51:52.373+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:51:55.421+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51338 #93 (17 connections now open)
+2015-11-23T00:51:55.424+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51339 #94 (18 connections now open)
+2015-11-23T00:52:08.018+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51425 #95 (19 connections now open)
+2015-11-23T00:52:08.036+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51426 #96 (20 connections now open)
+2015-11-23T00:52:34.198+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51590 #97 (21 connections now open)
+2015-11-23T00:52:34.201+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51591 #98 (22 connections now open)
+2015-11-23T00:52:39.774+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51628 #99 (23 connections now open)
+2015-11-23T00:52:39.778+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51629 #100 (24 connections now open)
+2015-11-23T00:52:50.393+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51697 #101 (25 connections now open)
+2015-11-23T00:52:50.395+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51698 #102 (26 connections now open)
+2015-11-23T00:52:52.372+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:52:53.252+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51717 #103 (27 connections now open)
+2015-11-23T00:52:53.254+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51718 #104 (28 connections now open)
+2015-11-23T00:53:00.314+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51760 #105 (29 connections now open)
+2015-11-23T00:53:00.317+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51761 #106 (30 connections now open)
+2015-11-23T00:53:07.585+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51810 #107 (31 connections now open)
+2015-11-23T00:53:07.602+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51811 #108 (32 connections now open)
+2015-11-23T00:53:08.984+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51822 #109 (33 connections now open)
+2015-11-23T00:53:09.001+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51823 #110 (34 connections now open)
+2015-11-23T00:53:14.611+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51856 #111 (35 connections now open)
+2015-11-23T00:53:14.615+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51857 #112 (36 connections now open)
+2015-11-23T00:53:52.378+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:54:52.384+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn86] end connection 127.0.0.1:51140 (35 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn85] end connection 127.0.0.1:51139 (35 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn90] end connection 127.0.0.1:51279 (34 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn91] end connection 127.0.0.1:51314 (33 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn89] end connection 127.0.0.1:51278 (35 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn93] end connection 127.0.0.1:51338 (31 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn88] end connection 127.0.0.1:51233 (35 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn97] end connection 127.0.0.1:51590 (29 connections now open)
+2015-11-23T00:55:12.033+0200 I NETWORK  [conn87] end connection 127.0.0.1:51232 (35 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn94] end connection 127.0.0.1:51339 (30 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn92] end connection 127.0.0.1:51315 (32 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn98] end connection 127.0.0.1:51591 (28 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn99] end connection 127.0.0.1:51628 (27 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn100] end connection 127.0.0.1:51629 (27 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn101] end connection 127.0.0.1:51697 (26 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn102] end connection 127.0.0.1:51698 (25 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn103] end connection 127.0.0.1:51717 (24 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn104] end connection 127.0.0.1:51718 (23 connections now open)
+2015-11-23T00:55:12.034+0200 I NETWORK  [conn105] end connection 127.0.0.1:51760 (22 connections now open)
+2015-11-23T00:55:12.035+0200 I NETWORK  [conn106] end connection 127.0.0.1:51761 (21 connections now open)
+2015-11-23T00:55:12.035+0200 I NETWORK  [conn111] end connection 127.0.0.1:51856 (19 connections now open)
+2015-11-23T00:55:12.035+0200 I NETWORK  [conn112] end connection 127.0.0.1:51857 (18 connections now open)
+2015-11-23T00:55:25.641+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52672 #113 (15 connections now open)
+2015-11-23T00:55:52.384+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:56:31.647+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53099 #114 (16 connections now open)
+2015-11-23T00:56:52.390+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:57:10.773+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53341 #115 (17 connections now open)
+2015-11-23T00:57:10.789+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53342 #116 (18 connections now open)
+2015-11-23T00:57:11.967+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53351 #117 (19 connections now open)
+2015-11-23T00:57:11.986+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53352 #118 (20 connections now open)
+2015-11-23T00:57:14.694+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53371 #119 (21 connections now open)
+2015-11-23T00:57:14.714+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53372 #120 (22 connections now open)
+2015-11-23T00:57:52.382+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:58:52.381+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T00:59:52.385+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:00:52.385+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:01:52.396+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:02:45.863+0200 I NETWORK  [conn113] end connection 127.0.0.1:52672 (21 connections now open)
+2015-11-23T01:02:45.863+0200 I NETWORK  [conn114] end connection 127.0.0.1:53099 (21 connections now open)
+2015-11-23T01:02:52.427+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:03:02.545+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55570 #121 (21 connections now open)
+2015-11-23T01:03:02.609+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55571 #122 (22 connections now open)
+2015-11-23T01:03:10.371+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55619 #123 (23 connections now open)
+2015-11-23T01:03:10.374+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55620 #124 (24 connections now open)
+2015-11-23T01:03:19.143+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55678 #125 (25 connections now open)
+2015-11-23T01:03:19.146+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55679 #126 (26 connections now open)
+2015-11-23T01:03:24.592+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55714 #127 (27 connections now open)
+2015-11-23T01:03:24.598+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55715 #128 (28 connections now open)
+2015-11-23T01:03:52.392+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn121] end connection 127.0.0.1:55570 (27 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn122] end connection 127.0.0.1:55571 (27 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn124] end connection 127.0.0.1:55620 (27 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn123] end connection 127.0.0.1:55619 (27 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn125] end connection 127.0.0.1:55678 (23 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn126] end connection 127.0.0.1:55679 (23 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn127] end connection 127.0.0.1:55714 (22 connections now open)
+2015-11-23T01:04:23.315+0200 I NETWORK  [conn128] end connection 127.0.0.1:55715 (21 connections now open)
+2015-11-23T01:04:39.801+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56169 #129 (21 connections now open)
+2015-11-23T01:04:52.396+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:05:37.814+0200 I NETWORK  [conn129] end connection 127.0.0.1:56169 (20 connections now open)
+2015-11-23T01:05:49.391+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56590 #130 (21 connections now open)
+2015-11-23T01:05:52.398+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:05:56.145+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56633 #131 (22 connections now open)
+2015-11-23T01:05:59.635+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56656 #132 (23 connections now open)
+2015-11-23T01:05:59.646+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56657 #133 (24 connections now open)
+2015-11-23T01:06:09.166+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56716 #134 (25 connections now open)
+2015-11-23T01:06:52.473+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:07:52.426+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:08:52.426+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:08:58.025+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57736 #135 (26 connections now open)
+2015-11-23T01:08:58.040+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57737 #136 (27 connections now open)
+2015-11-23T01:09:03.943+0200 I NETWORK  [conn130] end connection 127.0.0.1:56590 (26 connections now open)
+2015-11-23T01:09:03.943+0200 I NETWORK  [conn131] end connection 127.0.0.1:56633 (26 connections now open)
+2015-11-23T01:09:03.943+0200 I NETWORK  [conn132] end connection 127.0.0.1:56656 (26 connections now open)
+2015-11-23T01:09:03.943+0200 I NETWORK  [conn133] end connection 127.0.0.1:56657 (26 connections now open)
+2015-11-23T01:09:03.943+0200 I NETWORK  [conn134] end connection 127.0.0.1:56716 (25 connections now open)
+2015-11-23T01:09:19.082+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57870 #137 (23 connections now open)
+2015-11-23T01:09:19.129+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57871 #138 (24 connections now open)
+2015-11-23T01:09:23.506+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57901 #139 (25 connections now open)
+2015-11-23T01:09:23.510+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57902 #140 (26 connections now open)
+2015-11-23T01:09:29.478+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57939 #141 (27 connections now open)
+2015-11-23T01:09:29.481+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57940 #142 (28 connections now open)
+2015-11-23T01:09:36.851+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57984 #143 (29 connections now open)
+2015-11-23T01:09:36.860+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57985 #144 (30 connections now open)
+2015-11-23T01:09:47.195+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58047 #145 (31 connections now open)
+2015-11-23T01:09:47.197+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58048 #146 (32 connections now open)
+2015-11-23T01:09:52.331+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58082 #147 (33 connections now open)
+2015-11-23T01:09:52.334+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58083 #148 (34 connections now open)
+2015-11-23T01:09:52.421+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:09:58.026+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58117 #149 (35 connections now open)
+2015-11-23T01:09:58.030+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58118 #150 (36 connections now open)
+2015-11-23T01:10:20.625+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58256 #151 (37 connections now open)
+2015-11-23T01:10:20.631+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58257 #152 (38 connections now open)
+2015-11-23T01:10:52.426+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:11:52.432+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:11:58.984+0200 I NETWORK  [conn138] end connection 127.0.0.1:57871 (37 connections now open)
+2015-11-23T01:11:58.984+0200 I NETWORK  [conn137] end connection 127.0.0.1:57870 (37 connections now open)
+2015-11-23T01:11:58.984+0200 I NETWORK  [conn139] end connection 127.0.0.1:57901 (37 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn140] end connection 127.0.0.1:57902 (37 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn141] end connection 127.0.0.1:57939 (37 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn142] end connection 127.0.0.1:57940 (34 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn143] end connection 127.0.0.1:57984 (32 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn144] end connection 127.0.0.1:57985 (31 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn145] end connection 127.0.0.1:58047 (30 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn146] end connection 127.0.0.1:58048 (29 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn147] end connection 127.0.0.1:58082 (28 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn148] end connection 127.0.0.1:58083 (27 connections now open)
+2015-11-23T01:11:58.985+0200 I NETWORK  [conn149] end connection 127.0.0.1:58117 (26 connections now open)
+2015-11-23T01:11:58.986+0200 I NETWORK  [conn150] end connection 127.0.0.1:58118 (26 connections now open)
+2015-11-23T01:11:58.986+0200 I NETWORK  [conn151] end connection 127.0.0.1:58256 (24 connections now open)
+2015-11-23T01:11:58.986+0200 I NETWORK  [conn152] end connection 127.0.0.1:58257 (23 connections now open)
+2015-11-23T01:12:17.540+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59072 #153 (23 connections now open)
+2015-11-23T01:12:17.580+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59074 #154 (24 connections now open)
+2015-11-23T01:12:22.911+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59111 #155 (25 connections now open)
+2015-11-23T01:12:22.914+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59112 #156 (26 connections now open)
+2015-11-23T01:12:29.620+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59153 #157 (27 connections now open)
+2015-11-23T01:12:29.625+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59154 #158 (28 connections now open)
+2015-11-23T01:12:37.641+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59206 #159 (29 connections now open)
+2015-11-23T01:12:37.645+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59207 #160 (30 connections now open)
+2015-11-23T01:12:51.007+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59292 #161 (31 connections now open)
+2015-11-23T01:12:51.009+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59293 #162 (32 connections now open)
+2015-11-23T01:12:52.431+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:13:05.351+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59382 #163 (33 connections now open)
+2015-11-23T01:13:05.353+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59383 #164 (34 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn153] end connection 127.0.0.1:59072 (33 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn154] end connection 127.0.0.1:59074 (33 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn155] end connection 127.0.0.1:59111 (33 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn156] end connection 127.0.0.1:59112 (33 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn157] end connection 127.0.0.1:59153 (33 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn158] end connection 127.0.0.1:59154 (32 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn159] end connection 127.0.0.1:59206 (30 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn160] end connection 127.0.0.1:59207 (30 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn161] end connection 127.0.0.1:59292 (28 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn162] end connection 127.0.0.1:59293 (27 connections now open)
+2015-11-23T01:13:33.442+0200 I NETWORK  [conn163] end connection 127.0.0.1:59382 (26 connections now open)
+2015-11-23T01:13:33.443+0200 I NETWORK  [conn164] end connection 127.0.0.1:59383 (24 connections now open)
+2015-11-23T01:13:44.604+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59629 #165 (23 connections now open)
+2015-11-23T01:13:44.668+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59631 #166 (24 connections now open)
+2015-11-23T01:13:52.421+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:13:53.651+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59689 #167 (25 connections now open)
+2015-11-23T01:13:53.654+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59690 #168 (26 connections now open)
+2015-11-23T01:14:04.643+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59760 #169 (27 connections now open)
+2015-11-23T01:14:04.659+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59761 #170 (28 connections now open)
+2015-11-23T01:14:06.291+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59771 #171 (29 connections now open)
+2015-11-23T01:14:06.307+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59773 #172 (30 connections now open)
+2015-11-23T01:14:07.570+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59781 #173 (31 connections now open)
+2015-11-23T01:14:07.585+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59782 #174 (32 connections now open)
+2015-11-23T01:14:52.425+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:14:55.844+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60083 #175 (33 connections now open)
+2015-11-23T01:14:55.850+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60084 #176 (34 connections now open)
+2015-11-23T01:14:58.091+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60099 #177 (35 connections now open)
+2015-11-23T01:14:58.094+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60100 #178 (36 connections now open)
+2015-11-23T01:15:08.261+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60166 #179 (37 connections now open)
+2015-11-23T01:15:08.276+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60167 #180 (38 connections now open)
+2015-11-23T01:15:21.463+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60250 #181 (39 connections now open)
+2015-11-23T01:15:21.478+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60251 #182 (40 connections now open)
+2015-11-23T01:15:52.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:16:22.925+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60639 #183 (41 connections now open)
+2015-11-23T01:16:22.927+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60640 #184 (42 connections now open)
+2015-11-23T01:16:27.456+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60666 #185 (43 connections now open)
+2015-11-23T01:16:27.459+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60667 #186 (44 connections now open)
+2015-11-23T01:16:52.435+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:17:17.098+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60984 #187 (45 connections now open)
+2015-11-23T01:17:17.102+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60989 #188 (46 connections now open)
+2015-11-23T01:17:47.072+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61180 #189 (47 connections now open)
+2015-11-23T01:17:47.075+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61181 #190 (48 connections now open)
+2015-11-23T01:17:52.436+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:18:00.704+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61267 #191 (49 connections now open)
+2015-11-23T01:18:00.706+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61268 #192 (50 connections now open)
+2015-11-23T01:18:10.361+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61330 #193 (51 connections now open)
+2015-11-23T01:18:10.364+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61331 #194 (52 connections now open)
+2015-11-23T01:18:25.327+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61429 #195 (53 connections now open)
+2015-11-23T01:18:25.330+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61430 #196 (54 connections now open)
+2015-11-23T01:18:33.195+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61481 #197 (55 connections now open)
+2015-11-23T01:18:33.197+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61482 #198 (56 connections now open)
+2015-11-23T01:18:41.123+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61534 #199 (57 connections now open)
+2015-11-23T01:18:41.126+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61535 #200 (58 connections now open)
+2015-11-23T01:18:52.443+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:19:52.431+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:20:52.449+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:21:52.433+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:22:52.440+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:23:52.445+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:24:52.441+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:25:52.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:26:52.449+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:27:52.439+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:28:52.445+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T01:29:52.443+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:31:55.547+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:32:55.422+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:33:55.424+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:34:55.428+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:35:55.440+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:36:55.415+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:37:55.478+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:38:55.430+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:39:55.435+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:40:55.427+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:41:55.432+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:42:55.425+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:43:55.432+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:44:55.427+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:45:55.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:46:55.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:47:55.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:48:55.431+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:49:55.442+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:50:55.436+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:51:55.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:52:55.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:53:55.439+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:54:55.439+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:55:55.442+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:56:55.443+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:57:55.444+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:58:55.445+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T22:59:55.449+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:00:55.452+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:01:55.448+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:02:55.448+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:03:55.449+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:04:55.454+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:05:55.452+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:06:55.451+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:07:55.454+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:08:55.454+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:09:55.455+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:10:55.456+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:11:55.460+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:12:55.468+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:13:55.463+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:14:55.467+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:15:55.473+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:16:55.471+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:17:55.466+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:18:55.479+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:19:55.477+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:20:55.473+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:21:55.471+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:22:55.473+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:23:55.476+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:24:55.504+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:25:55.485+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:26:55.478+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:27:55.480+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:28:55.482+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:29:55.482+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:30:55.491+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:31:55.488+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:32:55.488+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:33:55.487+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:34:55.490+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:35:55.506+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:36:55.526+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:37:55.494+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:38:55.502+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:39:55.501+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:40:55.500+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:41:55.497+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:42:55.513+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:43:55.513+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:44:55.508+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:45:55.510+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:46:55.505+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:47:55.507+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:48:55.507+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:49:55.508+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:50:55.517+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:51:57.571+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:52:55.663+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:53:55.553+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:54:55.550+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:55:55.558+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:56:55.551+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-23T23:57:55.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:33:27.543+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:34:27.546+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:35:27.541+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:36:27.541+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:37:27.546+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:38:27.546+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:39:27.546+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:40:27.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:41:27.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:42:27.551+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:43:27.561+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:44:27.555+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:45:27.553+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:46:27.560+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:47:27.557+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:48:27.576+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:49:27.558+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:50:27.561+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:51:27.573+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:52:27.566+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:53:27.562+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:54:27.573+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:55:27.565+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:56:27.569+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:57:27.571+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:58:27.581+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T06:59:27.569+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:00:27.592+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:01:27.590+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:02:27.573+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:03:27.575+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:04:27.577+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:05:27.580+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:05:52.122+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58893 #201 (59 connections now open)
+2015-11-24T07:05:52.142+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58894 #202 (60 connections now open)
+2015-11-24T07:05:57.661+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58920 #203 (61 connections now open)
+2015-11-24T07:05:57.663+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58921 #204 (62 connections now open)
+2015-11-24T07:05:58.725+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58923 #205 (63 connections now open)
+2015-11-24T07:05:58.727+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58924 #206 (64 connections now open)
+2015-11-24T07:06:00.334+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58927 #207 (65 connections now open)
+2015-11-24T07:06:00.336+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58928 #208 (66 connections now open)
+2015-11-24T07:06:16.801+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58948 #209 (67 connections now open)
+2015-11-24T07:06:16.803+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58949 #210 (68 connections now open)
+2015-11-24T07:06:27.573+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:07:27.580+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:08:27.578+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:09:27.581+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:10:27.582+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:11:27.583+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:12:27.583+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:13:27.611+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:14:27.602+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:15:27.597+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:16:27.602+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:17:27.664+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:17:56.437+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60320 #211 (69 connections now open)
+2015-11-24T07:18:27.644+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:18:53.419+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60676 #212 (70 connections now open)
+2015-11-24T07:18:53.423+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60677 #213 (71 connections now open)
+2015-11-24T07:19:01.198+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60734 #214 (72 connections now open)
+2015-11-24T07:19:01.200+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60735 #215 (73 connections now open)
+2015-11-24T07:19:02.576+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60745 #216 (74 connections now open)
+2015-11-24T07:19:02.579+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60746 #217 (75 connections now open)
+2015-11-24T07:19:03.947+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60754 #218 (76 connections now open)
+2015-11-24T07:19:03.949+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60755 #219 (77 connections now open)
+2015-11-24T07:19:27.649+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:19:38.494+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60965 #220 (78 connections now open)
+2015-11-24T07:19:38.497+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60966 #221 (79 connections now open)
+2015-11-24T07:20:27.643+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:21:27.646+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:21:55.192+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61822 #222 (80 connections now open)
+2015-11-24T07:21:55.194+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61823 #223 (81 connections now open)
+2015-11-24T07:22:27.650+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:23:27.658+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:24:27.647+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:25:25.757+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63262 #224 (82 connections now open)
+2015-11-24T07:25:25.760+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63263 #225 (83 connections now open)
+2015-11-24T07:25:27.651+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:26:27.657+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:26:29.192+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63653 #226 (84 connections now open)
+2015-11-24T07:26:29.194+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63654 #227 (85 connections now open)
+2015-11-24T07:27:27.652+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:27:54.446+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64167 #228 (86 connections now open)
+2015-11-24T07:27:54.449+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64168 #229 (87 connections now open)
+2015-11-24T07:27:59.239+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64199 #230 (88 connections now open)
+2015-11-24T07:27:59.242+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64200 #231 (89 connections now open)
+2015-11-24T07:28:27.242+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64371 #232 (90 connections now open)
+2015-11-24T07:28:27.245+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64372 #233 (91 connections now open)
+2015-11-24T07:28:27.652+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:29:27.654+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:30:27.668+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:31:27.663+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:32:27.659+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:33:27.660+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:34:27.663+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:35:27.675+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:36:27.682+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:37:27.677+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:38:27.688+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:39:27.685+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:40:27.692+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:41:27.693+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:42:27.683+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:43:27.689+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:44:27.724+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:45:27.704+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:46:27.690+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:47:27.692+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:48:27.705+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:49:27.694+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:50:27.695+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:51:27.710+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:52:27.698+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:53:27.705+0200 I COMMAND  [DataFileSync] flushing diag log
+2015-11-24T07:54:08.638+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57575 #234 (92 connections now open)
+2015-11-24T07:54:08.640+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57576 #235 (93 connections now open)
+2015-11-24T07:54:16.522+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57630 #236 (94 connections now open)
+2015-11-24T07:54:16.525+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57631 #237 (95 connections now open)
+2015-11-24T07:54:27.719+0200 I COMMAND  [DataFileSync] flushing diag log

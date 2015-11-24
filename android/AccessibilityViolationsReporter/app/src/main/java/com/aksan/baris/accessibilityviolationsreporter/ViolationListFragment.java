@@ -1,13 +1,30 @@
 package com.aksan.baris.accessibilityviolationsreporter;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
+import com.ning.http.client.AsyncHttpClient;
+import com.ning.http.client.Response;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 /**
  * A list fragment representing a list of Violations. This fragment
@@ -19,6 +36,8 @@ import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
  * interface.
  */
 public class ViolationListFragment extends ListFragment {
+
+    public HashMap<Integer, String> positionToId = new HashMap<Integer, String>();
 
     /**
      * The serialization (saved instance state) Bundle key representing the
@@ -76,6 +95,10 @@ public class ViolationListFragment extends ListFragment {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 DummyContent.ITEMS));
+
+        Activity activity = this.getActivity();
+        GetAllViolationsTask r = new GetAllViolationsTask(activity);
+        r.execute();
     }
 
     @Override
@@ -115,7 +138,7 @@ public class ViolationListFragment extends ListFragment {
 
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
-        mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+        mCallbacks.onItemSelected(positionToId.get(position));
     }
 
     @Override
@@ -147,5 +170,52 @@ public class ViolationListFragment extends ListFragment {
         }
 
         mActivatedPosition = position;
+    }
+
+    class GetAllViolationsTask extends AsyncTask<String, Void, JSONArray> {
+
+        Activity activity;
+        String url = "http://192.168.1.106:8080/AccessibilityViolationReporter/rest/violations/";
+
+        public GetAllViolationsTask(Activity activity) {
+            this.activity = activity;
+        }
+
+        protected JSONArray doInBackground(String... urls) {
+            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+            String getViolations = url;
+            try {
+                Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
+                return new JSONArray(r.getResponseBody());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return new JSONArray();
+        }
+
+        protected void onPostExecute(JSONArray result) {
+            positionToId.clear();
+            try {
+                List<Violation> list = new ArrayList<Violation>();
+                for(int i = 0; i < result.length(); i++){
+                    Violation v = new Violation(result.getJSONObject(i));
+                    list.add(v);
+                    positionToId.put(i, v.getId());
+                }
+                setListAdapter(new ArrayAdapter<Violation>(
+                        getActivity(),
+                        android.R.layout.simple_list_item_activated_1,
+                        list));
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

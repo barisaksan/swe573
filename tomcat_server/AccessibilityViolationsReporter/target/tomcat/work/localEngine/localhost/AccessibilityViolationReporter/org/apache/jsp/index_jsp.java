@@ -50,11 +50,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<html>\n");
-      out.write("<body>\n");
-      out.write("<h2>Hello World!</h2>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("<html>\r\n");
+      out.write("<body>\r\n");
+      out.write("<h2>Hello World!</h2>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

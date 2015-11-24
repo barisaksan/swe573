@@ -5,8 +5,6 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-
 	<context-param>
 		<param-name>MONGODB_HOST</param-name>
 		<param-value>localhost</param-value>

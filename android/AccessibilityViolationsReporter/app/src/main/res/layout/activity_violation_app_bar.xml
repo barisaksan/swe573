@@ -12,20 +12,66 @@
 
         <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
             android:layout_height="?attr/actionBarSize" android:layout_width="match_parent"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <Button
+                android:id="@+id/search_menu_button"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_gravity="top|right"
+                android:background="@drawable/ic_search_white_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
     <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" android:id="@+id/frameLayout">
-
         <include layout="@layout/activity_violation_list" />
+
     </FrameLayout>
 
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin" android:src="@android:drawable/ic_dialog_email"
-        android:layout_gravity="bottom|end" />
+    <FrameLayout
+        android:id="@+id/notFab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone" />
 
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin" android:layout_gravity="bottom|end"
+        android:orientation="vertical">
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fabRamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_small_margin"
+            android:layout_gravity="bottom|center_horizontal"
+            app:fabSize="mini"
+            android:src="@drawable/ramp_noun_169108_cc" />
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fabCarPark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_small_margin"
+            android:layout_gravity="bottom|center_horizontal"
+            app:fabSize="mini"
+            android:src="@drawable/car_park_noun_157120_cc" />
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fabDoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_small_margin"
+            android:layout_gravity="bottom|center_horizontal"
+            app:fabSize="mini"
+            android:src="@drawable/door_noun_77683_cc" />
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fabReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_gravity="bottom|center_horizontal"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
