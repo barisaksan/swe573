@@ -1,5 +1,5 @@
 server/node_modules/
 server/bin/
 server/npm-debug.log
-mongodb/data/
 mongodb/log/
+mongodb/data/
