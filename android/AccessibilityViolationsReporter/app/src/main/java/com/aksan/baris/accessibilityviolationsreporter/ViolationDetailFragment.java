@@ -56,16 +56,20 @@ public class ViolationDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+
+            //mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+
 
             Activity activity = this.getActivity();
+            /*
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
                 appBarLayout.setTitle(mItem.content);
             }
+            */
 
             //GetViolationTask r = new GetViolationTask(activity, "5648bac5f72251f221f496dc");
-            GetViolationTask r = new GetViolationTask(activity, ARG_ITEM_ID);
+            GetViolationTask r = new GetViolationTask(activity, getArguments().getString(ARG_ITEM_ID));
             r.execute();
         }
     }
@@ -117,6 +121,10 @@ public class ViolationDetailFragment extends Fragment {
             TextView textView = (TextView) activity.findViewById(R.id.violation_detail);
             try {
                 textView.setText(result.getJSONObject(0).getString("description"));
+                CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
+                if (appBarLayout != null) {
+                    appBarLayout.setTitle(result.getJSONObject(0).getString("type"));
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
