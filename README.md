@@ -17,3 +17,9 @@ http://aksan.duckdns.org:8001/
 
 [Requirements Specification](https://github.com/barisaksan/swe573/wiki/Requirements-Specification)  
 [Design Specification](https://github.com/barisaksan/swe573/wiki/Design-Specification)  
+
+## References
+### icons
+https://thenounproject.com/  
+https://materialdesignicons.com/  
+https://www.google.com/design/icons/  
