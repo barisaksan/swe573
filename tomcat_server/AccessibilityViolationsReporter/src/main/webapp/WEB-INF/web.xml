@@ -3,7 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>AccessibleCity REST</display-name>
 
 	<context-param>
 		<param-name>MONGODB_HOST</param-name>
@@ -17,8 +17,8 @@
   <servlet>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<servlet-class>
-      com.sun.jersey.spi.container.servlet.ServletContainer
-    </servlet-class>
+      		com.sun.jersey.spi.container.servlet.ServletContainer
+    	</servlet-class>
 		<init-param>
 		     <param-name>com.sun.jersey.config.property.packages</param-name>
 		     <param-value>aksan.access.rest</param-value>
