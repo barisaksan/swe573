@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.Response;
 
@@ -88,14 +91,6 @@ public class ViolationListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*
-        // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
-                getActivity(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                DummyContent.ITEMS));
-*/
         Activity activity = this.getActivity();
         GetAllViolationsTask r = new GetAllViolationsTask(activity);
         r.execute();
@@ -175,7 +170,7 @@ public class ViolationListFragment extends ListFragment {
     class GetAllViolationsTask extends AsyncTask<String, Void, JSONArray> {
 
         Activity activity;
-        String url = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
 
         public GetAllViolationsTask(Activity activity) {
             this.activity = activity;
@@ -201,21 +196,29 @@ public class ViolationListFragment extends ListFragment {
 
         protected void onPostExecute(JSONArray result) {
             positionToId.clear();
-            try {
-                List<Violation> list = new ArrayList<Violation>();
-                for(int i = 0; i < result.length(); i++){
-                    Violation v = new Violation(result.getJSONObject(i));
-                    list.add(v);
-                    positionToId.put(i, v.getId());
-                }
-                setListAdapter(new ArrayAdapter<Violation>(
-                        getActivity(),
-                        android.R.layout.simple_list_item_activated_1,
-                        list));
+            List<Violation> list = new ArrayList<Violation>();
 
-            } catch (JSONException e) {
-                e.printStackTrace();
+            for(int i = 0; i < result.length(); i++){
+                try {
+                        ObjectMapper mapper = new ObjectMapper();
+                        Violation v = mapper.readValue(result.getJSONObject(i).toString(), Violation.class);
+                        list.add(v);
+                        positionToId.put(i, v.get_id().toString());
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                } catch (JsonParseException e) {
+                    e.printStackTrace();
+                } catch (JsonMappingException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            setListAdapter(new ArrayAdapter<Violation>(
+                    getActivity(),
+                    android.R.layout.simple_list_item_activated_1,
+                    list));
         }
     }
 }

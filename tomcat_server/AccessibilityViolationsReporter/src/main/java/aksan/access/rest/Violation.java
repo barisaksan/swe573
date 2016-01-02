@@ -1,52 +1,78 @@
 package aksan.access.rest;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 /**
  * Created by baris on 17.11.2015.
  */
 public class Violation {
-
+/*
     public Violation(JSONObject jsonViolation) throws JSONException {
         id = jsonViolation.getJSONObject("_id").getString("$oid");
         type = jsonViolation.getString("type");
-        location = jsonViolation.getString("location");
         description = jsonViolation.getString("description");
         reporter = jsonViolation.getString("reporter");
     }
-
+*/
+    @Override
     public String toString() {
-        String str = description;
-        try {
-            JSONObject l = new JSONObject(location);
-            str = "[" + type + "]" + " @" + l.getString("name") + ": " + description;
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        String str = "[" + type + "]" + " @" + location.toString() + ": " + description;
         return str;
     }
 
-    public String getId() {
-        return id;
+    public String get_id() {
+        return _id;
     }
 
-    String id;
-    //ViolationType type;
+    public void set_id(String _id) {
+        this._id = _id;
+    }
+
+    String _id;
     String type;
-    //Location location;
-    String location;
+    Location location;
     String description;
+    String reporter;
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setReporter(String reporter) {
+        this.reporter = reporter;
+    }
+
+    public String getReporter() {
+        return reporter;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    //String id;
+    //ViolationType type;
+    //Location location;
     //Rating rating;
     //ViolationProperty[] properties;
     //Photo[] Photos;
-    String[] Photos;
-    String[] comments;
     //User reporter;
-    String reporter;
-
+/*
     //TODO: implement classes
-    class Location {}
     class Rating {}
     class ViolationProperty {
 
@@ -65,6 +91,7 @@ public class Violation {
         LIGHT,
         OTHER
     }
+    */
 }
 
 

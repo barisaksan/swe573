@@ -4,11 +4,12 @@ import com.mongodb.*;
 import com.mongodb.gridfs.GridFS;
 import com.mongodb.gridfs.GridFSInputFile;
 import com.mongodb.util.JSON;
-import com.sun.jersey.core.header.FormDataContentDisposition;
-import com.sun.jersey.multipart.FormDataParam;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.HierarchicalINIConfiguration;
 import org.bson.types.ObjectId;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.json.simple.JSONArray;
 
 import javax.ws.rs.*;
@@ -128,11 +129,12 @@ public class RestServer {
 	@POST
     @Path("/violations")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response postViolations(String newViolation) {
+    public Response postViolations(Violation newViolation) {
         String output = "POST";
         try {
             DBCollection collection = db.getCollection("violations");
-            DBObject dbo = (DBObject) JSON.parse(newViolation.toString());
+            ObjectMapper mapper = new ObjectMapper();
+            DBObject dbo = (DBObject) JSON.parse(mapper.writeValueAsString(newViolation));
             List<DBObject> list = new ArrayList<DBObject>();
             list.add(dbo);
             collection.insert(list);
@@ -141,6 +143,12 @@ public class RestServer {
         } catch (MongoException e) {
             e.printStackTrace();
             output = "ERROR";
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return Response.status(200).entity(output).build();
@@ -150,15 +158,17 @@ public class RestServer {
     @Path("/violations/{id}/new_photo")
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     public Response postViolationsImage(
-            @FormDataParam("file") InputStream uploadedInputStream,
-            @FormDataParam("file") FormDataContentDisposition fileDetail,
-            @PathParam("id") String id) {
+            //@FormDataParam("file") InputStream uploadedInputStream,
+            //@FormDataParam("file") FormDataContentDisposition fileDetail
+            String multipart) {
         GridFS gfsPhoto = new GridFS(db, "photo");
-        GridFSInputFile gfsFile = gfsPhoto.createFile(uploadedInputStream);
-        gfsFile.setFilename(id);
+        //GridFSInputFile gfsFile = gfsPhoto.createFile(uploadedInputStream);
+        GridFSInputFile gfsFile = gfsPhoto.createFile(multipart.getBytes());
+        //gfsFile.setFilename(id);
+        gfsFile.setFilename("baris");
         gfsFile.save();
 
-        String output = "File uploaded to database : " + "photo/" + id;
+        String output = "File uploaded to database : " + "photo/" + "baris";
         return Response.status(200).entity(output).build();
     }
 

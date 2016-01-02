@@ -547,3 +547,1000 @@
 2016-01-02T03:10:42.775+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51352 #29 (7 connections now open)
 2016-01-02T03:10:45.927+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51371 #30 (8 connections now open)
 2016-01-02T03:11:03.167+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:12:03.159+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:13:03.158+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:14:03.162+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:15:03.160+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:16:03.161+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:17:03.163+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:18:03.164+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:19:03.174+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:20:03.168+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:21:03.173+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:22:03.172+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:23:03.174+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:24:03.171+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:25:03.183+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:26:03.177+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:27:03.175+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:28:03.174+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:29:03.180+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:30:03.178+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:31:03.178+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:32:03.187+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:33:03.182+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:33:49.906+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55853 #31 (9 connections now open)
+2016-01-02T03:34:03.182+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:35:03.195+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:35:53.164+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56259 #32 (10 connections now open)
+2016-01-02T03:36:03.208+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:36:08.737+0200 I NETWORK  [conn29] end connection 127.0.0.1:51352 (9 connections now open)
+2016-01-02T03:36:08.738+0200 I NETWORK  [conn27] end connection 127.0.0.1:49175 (8 connections now open)
+2016-01-02T03:36:08.738+0200 I NETWORK  [conn31] end connection 127.0.0.1:55853 (8 connections now open)
+2016-01-02T03:36:08.738+0200 I NETWORK  [conn30] end connection 127.0.0.1:51371 (8 connections now open)
+2016-01-02T03:36:08.738+0200 I NETWORK  [conn32] end connection 127.0.0.1:56259 (7 connections now open)
+2016-01-02T03:36:08.738+0200 I NETWORK  [conn28] end connection 127.0.0.1:49177 (7 connections now open)
+2016-01-02T03:37:03.195+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:38:03.199+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:39:03.196+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:40:03.189+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:41:03.194+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:42:03.201+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:43:03.195+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:44:03.205+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:45:03.198+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:46:03.202+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:47:03.198+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:48:03.202+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:49:03.205+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:50:03.203+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:51:03.211+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:52:03.208+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:53:03.208+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:54:03.210+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:55:03.211+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:56:03.236+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:57:03.215+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:58:03.214+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T03:59:03.216+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:00:03.217+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:01:03.222+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:02:03.216+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:03:03.217+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:04:03.220+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:05:03.221+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:06:03.221+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:07:03.222+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:08:03.223+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:09:03.236+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:10:03.227+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:11:03.226+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:12:03.229+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:13:03.241+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:14:03.231+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:15:03.240+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:16:03.234+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:17:03.230+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:18:03.234+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:19:03.233+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:20:03.237+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:21:03.245+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:22:03.239+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:23:03.246+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:24:03.241+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:25:03.243+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:26:03.246+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:27:03.246+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:28:03.245+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:29:03.255+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:30:03.255+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:31:03.255+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:32:03.256+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:33:03.251+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:34:03.302+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:34:40.331+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60867 #33 (5 connections now open)
+2016-01-02T04:35:03.257+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:35:15.928+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61081 #34 (6 connections now open)
+2016-01-02T04:36:03.256+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:37:02.560+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61725 #35 (7 connections now open)
+2016-01-02T04:37:02.569+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61727 #36 (8 connections now open)
+2016-01-02T04:37:03.264+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:38:03.257+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:39:03.267+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:40:03.259+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:41:03.261+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:42:03.263+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:43:03.263+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:44:03.265+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:44:41.481+0200 I NETWORK  [conn34] end connection 127.0.0.1:61081 (7 connections now open)
+2016-01-02T04:44:41.481+0200 I NETWORK  [conn36] end connection 127.0.0.1:61727 (7 connections now open)
+2016-01-02T04:44:41.481+0200 I NETWORK  [conn35] end connection 127.0.0.1:61725 (7 connections now open)
+2016-01-02T04:44:41.481+0200 I NETWORK  [conn33] end connection 127.0.0.1:60867 (7 connections now open)
+2016-01-02T04:44:57.751+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64675 #37 (5 connections now open)
+2016-01-02T04:45:03.265+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:46:03.275+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:46:19.687+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65176 #38 (6 connections now open)
+2016-01-02T04:47:03.273+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:48:03.278+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:49:03.271+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:50:03.281+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:51:03.287+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:52:03.275+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:53:03.275+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:53:56.658+0200 I NETWORK  [conn37] end connection 127.0.0.1:64675 (5 connections now open)
+2016-01-02T04:53:56.659+0200 I NETWORK  [conn38] end connection 127.0.0.1:65176 (5 connections now open)
+2016-01-02T04:54:03.500+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:54:47.610+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51624 #39 (5 connections now open)
+2016-01-02T04:55:03.331+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:56:03.317+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:57:03.353+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:57:26.296+0200 I NETWORK  [conn39] end connection 127.0.0.1:51624 (4 connections now open)
+2016-01-02T04:58:03.402+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T04:58:34.232+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52774 #40 (5 connections now open)
+2016-01-02T04:59:03.337+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:00:03.331+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:00:15.815+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53244 #41 (6 connections now open)
+2016-01-02T05:01:03.330+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:02:03.328+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:03:03.333+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:04:03.336+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:05:03.336+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:06:03.337+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:07:03.374+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:07:50.715+0200 I NETWORK  [conn40] end connection 127.0.0.1:52774 (5 connections now open)
+2016-01-02T05:07:50.715+0200 I NETWORK  [conn41] end connection 127.0.0.1:53244 (5 connections now open)
+2016-01-02T05:08:03.365+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:09:03.370+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:10:03.351+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:11:03.358+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:11:46.621+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57502 #42 (5 connections now open)
+2016-01-02T05:12:03.353+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:13:03.355+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:13:58.401+0200 I NETWORK  [conn42] end connection 127.0.0.1:57502 (4 connections now open)
+2016-01-02T05:14:03.372+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:14:37.280+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58533 #43 (5 connections now open)
+2016-01-02T05:14:38.369+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58538 #44 (6 connections now open)
+2016-01-02T05:14:38.920+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58544 #45 (7 connections now open)
+2016-01-02T05:15:03.361+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:16:03.364+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:16:23.498+0200 I NETWORK  [conn44] end connection 127.0.0.1:58538 (6 connections now open)
+2016-01-02T05:16:23.498+0200 I NETWORK  [conn43] end connection 127.0.0.1:58533 (6 connections now open)
+2016-01-02T05:16:23.498+0200 I NETWORK  [conn45] end connection 127.0.0.1:58544 (6 connections now open)
+2016-01-02T05:17:03.369+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:18:03.370+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:18:14.075+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60022 #46 (5 connections now open)
+2016-01-02T05:19:03.366+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:20:03.360+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:20:22.299+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60804 #47 (6 connections now open)
+2016-01-02T05:20:30.711+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60857 #48 (7 connections now open)
+2016-01-02T05:21:03.421+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:22:03.403+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:22:44.210+0200 I NETWORK  [conn46] end connection 127.0.0.1:60022 (6 connections now open)
+2016-01-02T05:22:44.210+0200 I NETWORK  [conn47] end connection 127.0.0.1:60804 (6 connections now open)
+2016-01-02T05:22:44.211+0200 I NETWORK  [conn48] end connection 127.0.0.1:60857 (6 connections now open)
+2016-01-02T05:22:58.851+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61749 #49 (5 connections now open)
+2016-01-02T05:23:03.433+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:23:26.554+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61921 #50 (6 connections now open)
+2016-01-02T05:23:59.954+0200 I NETWORK  [conn50] end connection 127.0.0.1:61921 (5 connections now open)
+2016-01-02T05:23:59.954+0200 I NETWORK  [conn49] end connection 127.0.0.1:61749 (5 connections now open)
+2016-01-02T05:24:03.406+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:24:16.924+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62218 #51 (5 connections now open)
+2016-01-02T05:25:03.407+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:25:34.524+0200 I NETWORK  [conn51] end connection 127.0.0.1:62218 (4 connections now open)
+2016-01-02T05:26:03.410+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:27:03.416+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:28:03.409+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:29:03.411+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:30:03.410+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:31:03.411+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:32:03.427+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:33:03.413+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:34:03.474+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:35:03.417+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:36:03.415+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:37:03.433+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:38:03.418+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:39:03.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:40:03.422+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:41:03.425+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:42:03.428+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:43:03.428+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:44:03.440+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:45:03.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:46:03.430+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:47:03.432+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:48:03.429+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:49:03.430+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:50:03.437+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:51:03.440+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:52:03.432+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:53:03.437+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:54:03.436+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:55:03.441+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:56:03.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:57:03.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:58:03.441+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T05:59:03.442+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:00:03.445+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:01:03.444+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:02:03.447+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:03:03.449+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:04:03.451+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:05:03.451+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:06:03.450+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:07:03.457+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:08:03.453+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:09:03.455+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:10:03.459+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:11:03.457+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:12:03.460+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:13:03.468+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:14:03.460+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:15:03.463+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:16:03.460+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:17:03.465+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:18:03.466+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:19:03.475+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:20:03.467+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:21:03.471+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:22:03.474+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:23:03.473+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:24:03.474+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:25:03.475+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:26:03.475+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:27:03.475+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:28:03.477+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:29:03.480+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:30:03.481+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:31:03.482+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:32:03.484+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:33:03.484+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:34:03.486+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:35:03.484+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:36:03.487+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:37:03.487+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:38:03.489+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:39:03.491+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:40:03.491+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:41:03.493+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:42:03.490+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:43:03.498+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:44:03.494+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:45:03.495+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:46:03.497+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:47:03.497+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:48:03.499+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:49:03.501+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:50:03.502+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:51:03.503+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:52:03.504+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:53:03.509+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:54:03.507+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:55:03.508+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:56:03.509+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:57:03.522+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:58:03.511+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T06:59:03.510+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:00:03.512+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:01:03.511+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:02:03.513+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:03:03.515+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:04:03.515+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:05:03.516+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:06:03.517+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:07:03.521+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:08:03.519+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:09:03.520+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:10:03.530+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:11:03.530+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:12:03.523+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:13:03.523+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:14:03.524+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:15:03.526+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:16:03.534+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:17:03.527+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:18:03.535+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:19:03.542+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:20:03.539+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:21:03.533+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:22:03.535+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:23:03.536+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:24:03.538+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:25:03.540+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:26:03.540+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:27:03.544+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:28:03.543+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:29:03.544+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:30:03.556+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:31:03.547+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:32:03.550+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:33:03.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:34:03.551+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:35:03.551+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:36:03.561+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:37:03.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:38:03.554+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:39:03.560+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:40:03.557+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:41:03.557+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:42:03.565+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:43:03.562+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:44:03.563+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:45:03.566+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:46:03.564+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:47:03.563+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:48:03.565+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:49:03.568+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:50:03.570+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:51:03.579+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:52:03.574+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:53:03.580+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:54:03.578+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:55:03.577+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:56:03.576+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:57:03.580+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:58:03.581+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T07:59:03.580+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:00:03.579+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:01:03.583+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:02:03.584+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:03:03.586+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:04:03.586+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:05:03.589+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:06:03.588+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:07:03.592+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:08:03.591+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:09:03.591+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:10:03.606+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:11:03.601+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:12:03.601+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:13:03.596+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:14:03.596+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:15:03.598+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:16:03.601+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:17:03.602+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:18:03.602+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:19:03.610+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:20:03.604+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:21:03.605+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:22:03.606+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:23:03.613+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:24:03.609+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:25:03.610+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:26:03.615+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:27:03.614+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:28:03.611+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:29:03.618+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:30:03.618+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:31:03.618+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:32:03.616+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:33:03.621+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:34:03.622+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:35:03.622+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:36:03.623+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:37:03.624+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:38:03.625+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:39:03.627+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:40:03.627+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:41:03.629+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:42:03.630+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:43:03.629+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:44:03.634+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:45:03.636+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:46:03.635+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:47:03.636+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:48:03.638+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:49:03.638+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:50:03.639+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:51:03.641+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:52:03.642+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:53:03.655+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:54:03.647+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:55:03.649+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:56:03.647+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:57:03.648+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:58:03.650+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T08:59:03.662+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:00:03.658+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:01:03.655+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:02:03.655+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:03:03.656+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:04:03.657+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:05:03.660+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:06:03.668+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:07:03.663+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:08:03.662+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:09:03.660+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:10:03.665+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:11:03.664+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:12:03.668+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:13:03.669+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:14:03.668+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:15:03.678+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:16:03.674+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:17:03.675+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:18:03.674+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:19:03.682+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:20:03.679+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:21:03.681+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:22:03.688+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:23:03.680+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:24:03.685+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:25:03.692+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:26:03.685+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:27:03.690+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:28:03.684+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:29:03.695+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:30:03.695+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:31:03.688+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:32:03.690+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:33:03.692+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:34:03.692+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:35:03.695+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:36:03.697+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:37:03.697+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:38:03.694+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:39:03.698+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:40:03.699+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:41:03.701+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:42:03.700+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:43:03.703+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:44:03.705+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:45:03.705+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:46:03.705+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:47:03.709+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:48:03.709+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:49:03.711+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:50:03.712+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:51:03.713+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:52:03.711+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:53:03.721+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:54:03.716+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:55:03.718+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:56:03.716+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:57:03.718+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:58:03.719+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T09:59:03.724+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:00:03.721+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:01:03.724+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:02:03.725+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:03:03.731+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:04:03.729+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:05:03.727+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:06:03.736+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:07:03.732+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:08:03.729+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:09:03.732+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:10:03.736+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:11:03.739+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:12:03.739+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:13:03.743+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:14:03.743+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:15:03.743+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:16:03.746+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:17:03.746+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:18:03.748+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:19:03.749+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:20:03.752+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:21:03.752+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:22:03.754+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:23:03.757+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:24:03.762+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:25:03.757+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:26:03.761+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:27:03.762+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:28:03.761+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:29:03.762+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:30:03.764+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:31:03.766+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:32:03.768+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:33:03.769+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:34:03.772+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:35:03.775+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:36:03.775+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:37:03.775+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:38:03.777+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:39:03.776+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:40:03.780+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:41:03.788+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:42:03.782+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:43:03.783+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:44:03.785+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:45:03.806+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:46:03.787+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:47:03.789+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:48:03.789+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:49:03.792+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:50:03.791+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:51:03.792+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:52:03.799+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:53:03.796+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:54:03.795+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:55:03.797+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:56:03.798+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:57:03.801+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:58:03.801+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T10:59:03.803+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:00:03.805+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:01:03.804+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:02:03.826+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:03:03.807+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:04:03.815+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:05:03.809+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:06:03.811+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:07:03.813+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:08:03.813+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:09:03.816+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:10:03.814+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:11:03.816+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:12:03.816+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:13:03.823+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:14:03.821+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:15:03.822+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:16:03.822+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:17:03.823+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:18:03.825+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:19:03.827+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:20:03.827+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:21:03.831+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:22:03.831+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:23:03.831+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:24:03.833+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:25:03.834+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:26:03.835+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:27:03.836+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:28:03.837+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:29:03.839+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:30:03.840+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:31:03.843+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:32:03.845+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:33:03.852+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:34:03.847+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:35:03.849+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:36:03.884+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:37:03.850+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:38:03.850+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:39:03.852+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:40:03.855+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:41:03.853+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:42:03.855+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:43:03.857+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:44:03.858+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:45:03.858+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:46:03.867+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:47:03.971+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:48:03.871+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:49:03.871+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:50:03.882+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:51:03.885+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:52:03.878+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:53:03.878+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:53:52.584+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56407 #52 (5 connections now open)
+2016-01-02T11:54:03.889+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:55:03.882+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:55:51.392+0200 I NETWORK  [conn52] end connection 127.0.0.1:56407 (4 connections now open)
+2016-01-02T11:56:03.883+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:57:03.883+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:58:03.885+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T11:59:03.883+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:00:03.887+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:01:03.895+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:02:03.889+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:03:03.902+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:03:13.370+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57022 #53 (5 connections now open)
+2016-01-02T12:03:14.130+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57023 #54 (6 connections now open)
+2016-01-02T12:03:15.142+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57025 #55 (7 connections now open)
+2016-01-02T12:03:17.551+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57029 #56 (8 connections now open)
+2016-01-02T12:04:03.889+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:05:03.892+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:05:48.758+0200 I NETWORK  [conn53] end connection 127.0.0.1:57022 (7 connections now open)
+2016-01-02T12:05:48.759+0200 I NETWORK  [conn56] end connection 127.0.0.1:57029 (7 connections now open)
+2016-01-02T12:05:48.758+0200 I NETWORK  [conn55] end connection 127.0.0.1:57025 (7 connections now open)
+2016-01-02T12:05:48.758+0200 I NETWORK  [conn54] end connection 127.0.0.1:57023 (7 connections now open)
+2016-01-02T12:06:03.896+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:06:09.035+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57335 #57 (5 connections now open)
+2016-01-02T12:07:03.900+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:08:03.894+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:08:27.716+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57498 #58 (6 connections now open)
+2016-01-02T12:08:54.962+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57527 #59 (7 connections now open)
+2016-01-02T12:08:59.382+0200 I NETWORK  [conn59] end connection 127.0.0.1:57527 (6 connections now open)
+2016-01-02T12:08:59.382+0200 I NETWORK  [conn57] end connection 127.0.0.1:57335 (6 connections now open)
+2016-01-02T12:08:59.382+0200 I NETWORK  [conn58] end connection 127.0.0.1:57498 (4 connections now open)
+2016-01-02T12:09:03.920+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:09:16.745+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57551 #60 (5 connections now open)
+2016-01-02T12:10:03.902+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:11:03.914+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:12:03.907+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:12:54.956+0200 I NETWORK  [conn60] end connection 127.0.0.1:57551 (4 connections now open)
+2016-01-02T12:13:03.994+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:13:16.640+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58020 #61 (5 connections now open)
+2016-01-02T12:14:03.908+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:15:03.905+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:15:52.946+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58246 #62 (6 connections now open)
+2016-01-02T12:16:01.950+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58256 #63 (7 connections now open)
+2016-01-02T12:16:03.914+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:16:28.369+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58285 #64 (8 connections now open)
+2016-01-02T12:16:28.397+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58286 #65 (9 connections now open)
+2016-01-02T12:17:03.919+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:18:03.962+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:19:03.913+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:20:03.909+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:21:03.913+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:22:03.917+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:23:03.949+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:24:03.967+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:25:03.946+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:26:03.949+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:27:03.943+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:28:03.943+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:29:03.948+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:30:03.938+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:31:03.944+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:32:03.947+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:33:03.948+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:34:03.957+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:35:03.954+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:36:03.968+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:37:03.961+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:38:04.683+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:39:04.195+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:40:04.203+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:41:04.197+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:42:04.200+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:42:49.679+0200 I NETWORK  [conn18] end connection 127.0.0.1:60888 (8 connections now open)
+2016-01-02T12:42:49.798+0200 I NETWORK  [conn17] end connection 127.0.0.1:60887 (7 connections now open)
+2016-01-02T12:42:50.657+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60628 #66 (8 connections now open)
+2016-01-02T12:42:50.700+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60629 #67 (9 connections now open)
+2016-01-02T12:43:03.574+0200 I NETWORK  [conn61] end connection 127.0.0.1:58020 (8 connections now open)
+2016-01-02T12:43:03.574+0200 I NETWORK  [conn63] end connection 127.0.0.1:58256 (8 connections now open)
+2016-01-02T12:43:03.574+0200 I NETWORK  [conn64] end connection 127.0.0.1:58285 (8 connections now open)
+2016-01-02T12:43:03.574+0200 I NETWORK  [conn62] end connection 127.0.0.1:58246 (8 connections now open)
+2016-01-02T12:43:03.575+0200 I NETWORK  [conn65] end connection 127.0.0.1:58286 (6 connections now open)
+2016-01-02T12:43:04.204+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:44:04.197+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:45:04.199+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:46:04.202+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:47:04.200+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:48:04.210+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:49:04.214+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:50:04.207+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:51:04.205+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:52:04.222+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:53:04.218+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:54:04.206+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:55:04.209+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:56:04.221+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:57:06.001+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:58:04.454+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T12:59:04.438+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:00:04.445+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:01:04.441+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:02:07.836+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:03:11.734+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:04:05.160+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:04:38.154+0200 I NETWORK  [conn67] end connection 127.0.0.1:60629 (3 connections now open)
+2016-01-02T13:04:38.154+0200 I NETWORK  [conn66] end connection 127.0.0.1:60628 (3 connections now open)
+2016-01-02T13:04:38.220+0200 I NETWORK  [conn14] end connection 127.0.0.1:60863 (1 connection now open)
+2016-01-02T13:04:38.274+0200 I NETWORK  [conn13] end connection 127.0.0.1:60862 (0 connections now open)
+2016-01-02T13:05:05.158+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:06:05.161+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:07:05.172+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:08:05.160+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:09:10.932+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:10:06.203+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:11:06.212+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:12:06.217+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:13:06.210+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:14:06.209+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:15:06.231+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:16:06.947+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:17:06.404+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:18:07.222+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:19:09.458+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:20:06.915+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:21:07.070+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:22:06.934+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:23:06.932+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:24:06.934+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:25:06.937+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:26:06.937+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:27:07.151+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:28:07.021+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:29:07.020+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:30:07.026+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:31:07.025+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:32:07.035+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:33:07.029+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:34:07.036+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:35:07.033+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:36:07.037+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:37:07.034+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:38:07.032+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:39:07.104+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:40:07.082+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:41:07.115+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:42:07.102+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:43:07.089+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:44:07.097+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:45:07.092+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:46:07.103+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:47:07.094+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:48:07.095+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:49:07.098+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:50:07.098+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:51:07.101+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:52:07.101+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:53:07.115+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:54:07.103+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:55:07.122+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:56:07.118+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:57:07.107+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:58:07.109+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T13:59:07.115+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:00:07.108+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:01:07.117+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:02:07.113+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:03:07.111+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:04:07.112+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:05:07.114+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:06:07.116+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:07:07.115+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:08:07.117+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:09:07.124+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:10:07.131+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:10:08.016+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64981 #68 (1 connection now open)
+2016-01-02T14:11:07.116+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:11:19.262+0200 I NETWORK  [conn68] end connection 127.0.0.1:64981 (0 connections now open)
+2016-01-02T14:12:07.119+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:13:07.125+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:13:29.204+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49844 #69 (1 connection now open)
+2016-01-02T14:13:29.629+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49847 #70 (2 connections now open)
+2016-01-02T14:13:34.332+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49877 #71 (3 connections now open)
+2016-01-02T14:13:34.344+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49878 #72 (4 connections now open)
+2016-01-02T14:13:39.895+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49914 #73 (5 connections now open)
+2016-01-02T14:13:39.901+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49915 #74 (6 connections now open)
+2016-01-02T14:13:45.545+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49951 #75 (7 connections now open)
+2016-01-02T14:13:45.550+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:49952 #76 (8 connections now open)
+2016-01-02T14:13:54.137+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50011 #77 (9 connections now open)
+2016-01-02T14:13:54.153+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50012 #78 (10 connections now open)
+2016-01-02T14:14:07.127+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:14:08.597+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50099 #79 (11 connections now open)
+2016-01-02T14:14:08.613+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50100 #80 (12 connections now open)
+2016-01-02T14:14:17.914+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50160 #81 (13 connections now open)
+2016-01-02T14:14:17.917+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50161 #82 (14 connections now open)
+2016-01-02T14:14:19.176+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50170 #83 (15 connections now open)
+2016-01-02T14:14:19.179+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50171 #84 (16 connections now open)
+2016-01-02T14:14:22.772+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50194 #85 (17 connections now open)
+2016-01-02T14:14:22.798+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50195 #86 (18 connections now open)
+2016-01-02T14:14:27.576+0200 I NETWORK  [conn80] end connection 127.0.0.1:50100 (17 connections now open)
+2016-01-02T14:14:27.577+0200 I NETWORK  [conn79] end connection 127.0.0.1:50099 (17 connections now open)
+2016-01-02T14:15:07.132+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:15:09.926+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50485 #87 (17 connections now open)
+2016-01-02T14:15:09.930+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50486 #88 (18 connections now open)
+2016-01-02T14:15:11.388+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50496 #89 (19 connections now open)
+2016-01-02T14:15:11.391+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50497 #90 (20 connections now open)
+2016-01-02T14:16:07.132+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:16:20.137+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50910 #91 (21 connections now open)
+2016-01-02T14:16:20.141+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50911 #92 (22 connections now open)
+2016-01-02T14:16:21.973+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50923 #93 (23 connections now open)
+2016-01-02T14:16:21.990+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50924 #94 (24 connections now open)
+2016-01-02T14:16:24.158+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50939 #95 (25 connections now open)
+2016-01-02T14:16:24.163+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50940 #96 (26 connections now open)
+2016-01-02T14:16:26.431+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50956 #97 (27 connections now open)
+2016-01-02T14:16:26.448+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50957 #98 (28 connections now open)
+2016-01-02T14:16:30.909+0200 I NETWORK  [conn86] end connection 127.0.0.1:50195 (27 connections now open)
+2016-01-02T14:16:30.909+0200 I NETWORK  [conn85] end connection 127.0.0.1:50194 (26 connections now open)
+2016-01-02T14:16:31.464+0200 I NETWORK  [conn94] end connection 127.0.0.1:50924 (25 connections now open)
+2016-01-02T14:16:31.465+0200 I NETWORK  [conn93] end connection 127.0.0.1:50923 (24 connections now open)
+2016-01-02T14:17:07.132+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:18:07.138+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:19:07.129+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:20:07.134+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:21:07.139+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:22:07.133+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:23:07.135+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:24:07.141+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:25:07.138+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:26:07.145+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:27:07.140+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:28:07.141+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:29:07.142+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:30:07.149+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:31:07.144+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:32:07.148+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:33:07.144+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:34:07.145+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:35:07.162+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:36:07.163+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:37:07.148+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:38:07.154+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:39:07.149+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:40:07.164+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:41:07.154+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:42:07.157+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:43:07.157+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:44:07.160+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:45:07.160+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:46:07.175+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:47:07.163+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:48:07.161+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:49:07.164+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:50:07.167+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:51:07.164+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:52:07.171+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:53:07.167+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:54:07.169+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:55:07.169+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:56:07.176+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:57:07.200+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:58:07.192+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T14:59:07.191+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:00:07.193+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:01:07.194+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:02:07.206+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:03:07.197+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:04:07.197+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:05:07.198+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:06:07.201+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:07:07.201+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:08:07.207+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:09:07.203+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:10:07.205+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:11:07.218+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:12:07.246+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:13:04.423+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64259 #99 (25 connections now open)
+2016-01-02T15:13:04.435+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64260 #100 (26 connections now open)
+2016-01-02T15:13:07.221+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:13:24.432+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64383 #101 (27 connections now open)
+2016-01-02T15:13:58.281+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64589 #102 (28 connections now open)
+2016-01-02T15:13:58.287+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64590 #103 (29 connections now open)
+2016-01-02T15:13:59.215+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64598 #104 (30 connections now open)
+2016-01-02T15:14:07.214+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:15:08.305+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:16:07.288+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:16:15.622+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65246 #105 (31 connections now open)
+2016-01-02T15:16:15.627+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65247 #106 (32 connections now open)
+2016-01-02T15:16:17.176+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65258 #107 (33 connections now open)
+2016-01-02T15:17:07.297+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:18:07.291+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn69] end connection 127.0.0.1:49844 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn71] end connection 127.0.0.1:49877 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn70] end connection 127.0.0.1:49847 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn72] end connection 127.0.0.1:49878 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn73] end connection 127.0.0.1:49914 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn75] end connection 127.0.0.1:49951 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn81] end connection 127.0.0.1:50160 (32 connections now open)
+2016-01-02T15:18:10.375+0200 I NETWORK  [conn83] end connection 127.0.0.1:50170 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn87] end connection 127.0.0.1:50485 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn89] end connection 127.0.0.1:50496 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn91] end connection 127.0.0.1:50910 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn95] end connection 127.0.0.1:50939 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn74] end connection 127.0.0.1:49915 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn105] end connection 127.0.0.1:65246 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn99] end connection 127.0.0.1:64259 (32 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn101] end connection 127.0.0.1:64383 (27 connections now open)
+2016-01-02T15:18:10.376+0200 I NETWORK  [conn96] end connection 127.0.0.1:50940 (32 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn88] end connection 127.0.0.1:50486 (22 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn84] end connection 127.0.0.1:50171 (19 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn90] end connection 127.0.0.1:50497 (24 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn92] end connection 127.0.0.1:50911 (27 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn76] end connection 127.0.0.1:49952 (15 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn100] end connection 127.0.0.1:64260 (15 connections now open)
+2016-01-02T15:18:10.377+0200 I NETWORK  [conn82] end connection 127.0.0.1:50161 (17 connections now open)
+2016-01-02T15:18:10.378+0200 I NETWORK  [conn103] end connection 127.0.0.1:64590 (8 connections now open)
+2016-01-02T15:18:10.378+0200 I NETWORK  [conn102] end connection 127.0.0.1:64589 (8 connections now open)
+2016-01-02T15:18:10.378+0200 I NETWORK  [conn104] end connection 127.0.0.1:64598 (8 connections now open)
+2016-01-02T15:18:10.378+0200 I NETWORK  [conn106] end connection 127.0.0.1:65247 (5 connections now open)
+2016-01-02T15:18:10.378+0200 I NETWORK  [conn107] end connection 127.0.0.1:65258 (5 connections now open)
+2016-01-02T15:19:07.297+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:19:28.784+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50026 #108 (5 connections now open)
+2016-01-02T15:19:29.319+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50031 #109 (6 connections now open)
+2016-01-02T15:19:31.762+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50046 #110 (7 connections now open)
+2016-01-02T15:20:07.299+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:21:07.292+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:22:07.293+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:23:07.296+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:24:07.305+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:25:07.298+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:26:07.307+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:27:07.331+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:28:07.302+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:29:07.318+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:30:07.319+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:31:07.305+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:32:07.320+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:32:58.018+0200 I NETWORK  [conn108] end connection 127.0.0.1:50026 (6 connections now open)
+2016-01-02T15:32:58.018+0200 I NETWORK  [conn110] end connection 127.0.0.1:50046 (5 connections now open)
+2016-01-02T15:32:58.018+0200 I NETWORK  [conn109] end connection 127.0.0.1:50031 (5 connections now open)
+2016-01-02T15:33:07.311+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:34:07.313+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:35:07.314+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:35:12.619+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55579 #111 (5 connections now open)
+2016-01-02T15:35:13.046+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55583 #112 (6 connections now open)
+2016-01-02T15:35:17.097+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55609 #113 (7 connections now open)
+2016-01-02T15:35:36.201+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55724 #114 (8 connections now open)
+2016-01-02T15:35:36.246+0200 I INDEX    [conn114] build index on: access.photo.files properties: { v: 1, key: { filename: 1, uploadDate: 1 }, name: "filename_1_uploadDate_1", ns: "access.photo.files" }
+2016-01-02T15:35:36.246+0200 I INDEX    [conn114] 	 building index using bulk method
+2016-01-02T15:35:36.249+0200 I INDEX    [conn114] build index done.  scanned 0 total records. 0 secs
+2016-01-02T15:35:36.270+0200 I INDEX    [conn114] build index on: access.photo.chunks properties: { v: 1, unique: true, key: { files_id: 1, n: 1 }, name: "files_id_1_n_1", ns: "access.photo.chunks" }
+2016-01-02T15:35:36.270+0200 I INDEX    [conn114] 	 building index using bulk method
+2016-01-02T15:35:36.271+0200 I INDEX    [conn114] build index done.  scanned 0 total records. 0 secs
+2016-01-02T15:35:50.621+0200 I NETWORK  [conn98] end connection 127.0.0.1:50957 (7 connections now open)
+2016-01-02T15:35:50.630+0200 I NETWORK  [conn97] end connection 127.0.0.1:50956 (6 connections now open)
+2016-01-02T15:35:55.902+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55840 #115 (7 connections now open)
+2016-01-02T15:35:55.924+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55841 #116 (8 connections now open)
+2016-01-02T15:35:57.433+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55850 #117 (9 connections now open)
+2016-01-02T15:35:57.450+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55851 #118 (10 connections now open)
+2016-01-02T15:36:07.328+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:37:07.311+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:38:07.312+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:39:07.315+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:39:34.185+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57157 #119 (11 connections now open)
+2016-01-02T15:39:34.205+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57158 #120 (12 connections now open)
+2016-01-02T15:39:37.083+0200 I NETWORK  [conn116] end connection 127.0.0.1:55841 (11 connections now open)
+2016-01-02T15:39:37.085+0200 I NETWORK  [conn115] end connection 127.0.0.1:55840 (10 connections now open)
+2016-01-02T15:39:37.512+0200 I NETWORK  [conn118] end connection 127.0.0.1:55851 (9 connections now open)
+2016-01-02T15:39:37.513+0200 I NETWORK  [conn117] end connection 127.0.0.1:55850 (8 connections now open)
+2016-01-02T15:39:37.925+0200 I NETWORK  [conn120] end connection 127.0.0.1:57158 (7 connections now open)
+2016-01-02T15:39:37.926+0200 I NETWORK  [conn119] end connection 127.0.0.1:57157 (6 connections now open)
+2016-01-02T15:39:45.299+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57227 #121 (7 connections now open)
+2016-01-02T15:39:45.320+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57228 #122 (8 connections now open)
+2016-01-02T15:39:53.050+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57274 #123 (9 connections now open)
+2016-01-02T15:39:53.068+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57276 #124 (10 connections now open)
+2016-01-02T15:40:07.376+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:41:07.561+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:42:10.715+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:42:38.311+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58037 #125 (11 connections now open)
+2016-01-02T15:42:38.373+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58038 #126 (12 connections now open)
+2016-01-02T15:43:07.482+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:43:47.381+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58477 #127 (13 connections now open)
+2016-01-02T15:43:47.386+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58478 #128 (14 connections now open)
+2016-01-02T15:44:07.487+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:44:17.947+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58668 #129 (15 connections now open)
+2016-01-02T15:44:17.956+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58669 #130 (16 connections now open)
+2016-01-02T15:45:07.484+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:46:07.487+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:47:08.052+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:48:07.862+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:48:40.399+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60069 #131 (17 connections now open)
+2016-01-02T15:48:40.403+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60070 #132 (18 connections now open)
+2016-01-02T15:48:52.774+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60147 #133 (19 connections now open)
+2016-01-02T15:48:52.778+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60148 #134 (20 connections now open)
+2016-01-02T15:49:07.873+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:50:07.868+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:51:07.857+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:52:07.858+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:53:07.864+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:54:07.861+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:55:07.859+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:56:07.861+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:57:07.863+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:58:07.866+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T15:59:07.862+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:00:07.867+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:01:07.869+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:02:07.869+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:03:07.869+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:04:07.872+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:05:07.873+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:06:07.874+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:07:07.874+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:08:07.873+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:09:07.874+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:10:07.878+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:11:07.882+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:12:07.941+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:13:08.012+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:13:46.119+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52356 #135 (21 connections now open)
+2016-01-02T16:13:46.136+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52357 #136 (22 connections now open)
+2016-01-02T16:14:07.933+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:15:07.926+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:16:07.930+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:17:07.931+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:18:07.931+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:19:07.932+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:20:07.934+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:20:19.582+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54744 #137 (23 connections now open)
+2016-01-02T16:20:19.588+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54745 #138 (24 connections now open)
+2016-01-02T16:21:07.935+0200 I COMMAND  [DataFileSync] flushing diag log
+2016-01-02T16:22:07.937+0200 I COMMAND  [DataFileSync] flushing diag log

@@ -15,9 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.Location;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -29,15 +30,12 @@ import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.Param;
 import com.ning.http.client.Response;
 
-import org.jboss.netty.handler.codec.http.HttpResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -69,8 +67,8 @@ public class AddViolationActivity extends AppCompatActivity {
                 AddViolationTask addViolationTask = new AddViolationTask(mActivity);
                 addViolationTask.execute();
 
-//                AddViolationPhotos addViolationPhotos = new AddViolationPhotos(mActivity);
-//                addViolationPhotos.execute();
+                AddViolationPhotos addViolationPhotos = new AddViolationPhotos(mActivity);
+                addViolationPhotos.execute();
             }
         });
 
@@ -108,9 +106,6 @@ public class AddViolationActivity extends AppCompatActivity {
         // Updates the location and zoom of the MapView
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(43.1, -87.9), 10);
         map.animateCamera(cameraUpdate);
-
-
-
     }
 
     @Override
@@ -134,6 +129,7 @@ public class AddViolationActivity extends AppCompatActivity {
 
         Activity activity;
         //String baseurl = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest";
+        //String baseurl = "http://192.168.1.150:8080/AccessibilityViolationReporter/rest";
         String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest";
 
         public AddViolationTask(Activity activity) {
@@ -143,14 +139,23 @@ public class AddViolationActivity extends AppCompatActivity {
         protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
             try {
-                ArrayList<Param> params = new ArrayList<Param>();
-                params.add(new Param("newViolation", "[\"bulsit\", \"falan\"]"));
+                //Violation v = new Violation(new JSONObject("{\"type\" : \"ramp\" , \"location\" : { \"name\" : \"balikesir\" , \"coordinates\" : \"41.043042,29.006645\"} , \"description\" : \"pof\" , \"reporter\" : \"barisaksan\" }"));
 
-                //{"type" : "ramp" , "location" : { "name" : "balikesir" , "coordinates" : "41.043042,29.006645"} , "description" : "pof" , "reporter" : "barisaksan" , "properties" : { "angle" : "15" , "length" : "10"} , "photos" : [ "photo_id_1" , "photo_id_2" , "photo_id_3"]}
+                Violation v = new Violation();
+                v.setDescription("new violation");
+                v.setReporter("barisaksan");
+                v.setType("ramp");
+                Location l = new Location();
+                l.setName("uzuncaova");
+                l.setCoordinates("123456,576789");
+                v.setLocation(l);
 
-                Future<Response> lFuture =
-                    asyncHttpClient.preparePost(baseurl + "/violations")
-                        .setFormParams(params)
+                ObjectMapper mapper = new ObjectMapper();
+
+                AsyncHttpClient.BoundRequestBuilder builder = asyncHttpClient.preparePost(baseurl + "/violations");
+                Future<Response> lFuture = builder
+                        .setBody(mapper.writeValueAsString(v))
+                        .setHeader("Content-Type", "application/json")
                         .execute();
                 return new JSONArray(lFuture.get());
             } catch (InterruptedException e) {
@@ -158,6 +163,8 @@ public class AddViolationActivity extends AppCompatActivity {
             } catch (ExecutionException e) {
                 e.printStackTrace();
             } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
             return new JSONArray();
@@ -168,6 +175,7 @@ public class AddViolationActivity extends AppCompatActivity {
 
         Activity activity;
         //String baseurl = "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest";
+        //String baseurl = "http://192.168.1.150:8080/AccessibilityViolationReporter/rest";
         String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest";
 
         public AddViolationPhotos(Activity activity) {
@@ -176,6 +184,7 @@ public class AddViolationActivity extends AppCompatActivity {
 
         protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+
             try {
                 String violationId = "123456789";
 
@@ -184,10 +193,20 @@ public class AddViolationActivity extends AppCompatActivity {
                 mPhotos.get(0).compress(Bitmap.CompressFormat.JPEG, 75, bos);
                 byte[] data = bos.toByteArray();
                 String encodedPhotoStr = Base64.encodeToString(data, Base64.DEFAULT);
+
                 params.add(new Param("newPhoto", encodedPhotoStr));
                 Future<Response> lFuture =
                         asyncHttpClient.preparePost(baseurl + "/violations/" + violationId + "/new_photo")
+                                .setHeader("Content-Type", "multipart/form-data")
+                                .setBody(data)
                                 .execute();
+/*
+                AsyncHttpClient.BoundRequestBuilder builder = asyncHttpClient.preparePost(baseurl + "/violations");
+                Future<Response> lFuture = builder
+                        .setBody(encodedPhotoStr)
+                        .setHeader("Content-Type", "multipart/form-data")
+                        .execute();
+*/
                 return new JSONArray(lFuture.get());
             } catch (InterruptedException e) {
                 e.printStackTrace();

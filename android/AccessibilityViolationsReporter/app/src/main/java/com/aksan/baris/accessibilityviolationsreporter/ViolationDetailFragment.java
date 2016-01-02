@@ -120,6 +120,9 @@ public class ViolationDetailFragment extends Fragment {
 
         protected void onPostExecute(JSONArray result) {
             try {
+
+                //TODO: handle image here
+
                 TextView detail = (TextView) activity.findViewById(R.id.violation_detail);
                 detail.setText(result.getJSONObject(0).getString("description"));
                 TextView location = (TextView)activity.findViewById(R.id.violation_location);
