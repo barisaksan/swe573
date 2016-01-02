@@ -1,17 +1,20 @@
 package aksan.access.rest;
 
 import com.mongodb.*;
+import com.mongodb.gridfs.GridFS;
+import com.mongodb.gridfs.GridFSInputFile;
 import com.mongodb.util.JSON;
+import com.sun.jersey.core.header.FormDataContentDisposition;
+import com.sun.jersey.multipart.FormDataParam;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.HierarchicalINIConfiguration;
 import org.bson.types.ObjectId;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import org.json.simple.JSONArray;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +23,16 @@ import java.util.List;
 public class RestServer {
     MongoClient mongo;
     DB db;
+    HierarchicalINIConfiguration config;
 
-    public RestServer() throws UnknownHostException {
-        mongo = new MongoClient("localhost", 27017);
-        db = mongo.getDB("access");
+    public RestServer() throws UnknownHostException, ConfigurationException {
+        config = new HierarchicalINIConfiguration("config.ini");
+        String dbHost = config.getSection("database").getString("host");
+        int dbPort = config.getSection("database").getInt("port");
+        String dbName = config.getSection("database").getString("name");
+
+        mongo = new MongoClient(dbHost, dbPort);
+        db = mongo.getDB(dbName);
     }
 
     @GET
@@ -32,78 +41,145 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("violations");
         DBCursor results = collection.find();
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
 	}
 
     @GET
     @Path("/violations/{id}")
-    public Response getViolations(@PathParam("id") String msg) throws UnknownHostException {
+    public Response getViolations(@PathParam("id") String id) throws UnknownHostException {
 
-        DBCollection collection = db.getCollection("violations");
-        DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(msg)));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
-        return Response.status(200).entity(serialize).build();
+        try {
+            DBCollection collection = db.getCollection("violations");
+            DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(id)));
+            String serialize = JSON.serialize(results);
+            return Response.status(200).entity(serialize).build();
+        }
+        catch (Exception e) {
+            return Response.status(200).entity(new JSONArray().toString()).build();
+        }
+    }
+
+    @GET
+    @Path("/violations/top")
+    public Response getViolationsSearch() throws UnknownHostException {
+
+        try {
+            DBCollection collection = db.getCollection("violations");
+            DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId("top")));
+            String serialize = JSON.serialize(results);
+            return Response.status(200).entity(serialize).build();
+        }
+        catch (Exception e) {
+            return Response.status(200).entity(new JSONArray().toString()).build();
+        }
+    }
+
+    @GET
+    @Path("/violations/search/{keyword}")
+    public Response getViolationsSearch(@PathParam("keyword") String keyword) throws UnknownHostException {
+
+        try {
+            DBCollection collection = db.getCollection("violations");
+            DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(keyword)));
+            String serialize = JSON.serialize(results);
+            return Response.status(200).entity(serialize).build();
+        }
+        catch (Exception e) {
+            return Response.status(200).entity(new JSONArray().toString()).build();
+        }
+    }
+
+    @GET
+    @Path("/violations/nearby/{location}")
+    public Response getViolationsNearby(@PathParam("location") String location) throws UnknownHostException {
+
+        try {
+            DBCollection collection = db.getCollection("violations");
+            DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(location)));
+            String serialize = JSON.serialize(results);
+            return Response.status(200).entity(serialize).build();
+        }
+        catch (Exception e) {
+            return Response.status(200).entity(new JSONArray().toString()).build();
+        }
     }
 
     @GET
     @Path("/violations/{id}/comments")
-    public Response getCommentsByViolation(@PathParam("id") String msg) throws UnknownHostException {
+    public Response getCommentsByViolation(@PathParam("id") String id) throws UnknownHostException {
 
         DBCollection collection = db.getCollection("comments");
-        DBCursor results = collection.find(new BasicDBObject("violation_id", msg));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        DBCursor results = collection.find(new BasicDBObject("violation_id", id));
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
     @GET
     @Path("/violations/{id}/ratings")
-    public Response getRatingsByViolation(@PathParam("id") String msg) throws UnknownHostException {
+    public Response getRatingsByViolation(@PathParam("id") String id) throws UnknownHostException {
 
         DBCollection collection = db.getCollection("ratings");
-        DBCursor results = collection.find(new BasicDBObject("violation_id", msg));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        DBCursor results = collection.find(new BasicDBObject("violation_id", id));
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
 	@POST
-    @Path("/violations/{id}")
-    public Response postViolations(@PathParam("id") String msg) {
+    @Path("/violations")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response postViolations(String newViolation) {
         String output = "POST";
         try {
             DBCollection collection = db.getCollection("violations");
-
-            FileReader reader = new FileReader("C:\\Users\\baris\\Desktop\\swe573\\swe573\\tomcat_server\\AccessibilityViolationsReporter\\src\\main\\java\\aksan\\access\\rest\\violations.json");
-            final JSONParser parser = new JSONParser();
-            final JSONObject json = (JSONObject) parser.parse(reader);
-
-            DBObject dbo = (DBObject) JSON.parse(json.toString());
+            DBObject dbo = (DBObject) JSON.parse(newViolation.toString());
             List<DBObject> list = new ArrayList<DBObject>();
             list.add(dbo);
             collection.insert(list);
-
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-            output = "ERROR";
+            String result = "Violation saved : " + newViolation;
+            return Response.status(201).entity(result).build();
         } catch (MongoException e) {
-            e.printStackTrace();
-            output = "ERROR";
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            output = "ERROR";
-        } catch (ParseException e) {
-            e.printStackTrace();
-            output = "ERROR";
-        } catch (IOException e) {
             e.printStackTrace();
             output = "ERROR";
         }
 
         return Response.status(200).entity(output).build();
+    }
+
+    @POST
+    @Path("/violations/{id}/new_photo")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response postViolationsImage(
+            @FormDataParam("file") InputStream uploadedInputStream,
+            @FormDataParam("file") FormDataContentDisposition fileDetail,
+            @PathParam("id") String id) {
+        GridFS gfsPhoto = new GridFS(db, "photo");
+        GridFSInputFile gfsFile = gfsPhoto.createFile(uploadedInputStream);
+        gfsFile.setFilename(id);
+        gfsFile.save();
+
+        String output = "File uploaded to database : " + "photo/" + id;
+        return Response.status(200).entity(output).build();
+    }
+
+    // save uploaded file to new location
+    private void writeToFile(InputStream uploadedInputStream,
+                             String uploadedFileLocation) {
+        try {
+            OutputStream out = new FileOutputStream(new File(
+                    uploadedFileLocation));
+            int read = 0;
+            byte[] bytes = new byte[1024];
+
+            out = new FileOutputStream(new File(uploadedFileLocation));
+            while ((read = uploadedInputStream.read(bytes)) != -1) {
+                out.write(bytes, 0, read);
+            }
+            out.flush();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 	
 	@PUT
@@ -130,8 +206,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("users");
         DBCursor results = collection.find();
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
@@ -141,8 +216,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("users");
         DBCursor results = collection.find(new BasicDBObject("username", msg));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
@@ -152,8 +226,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("comments");
         DBCursor results = collection.find();
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
@@ -163,8 +236,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("comments");
         DBCursor results = collection.find(new BasicDBObject("user", msg));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
@@ -174,8 +246,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("ratings");
         DBCursor results = collection.find();
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
@@ -185,7 +256,6 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("ratings");
         DBCursor results = collection.find(new BasicDBObject("user", msg));
-        JSON json = new JSON();
-        String serialize = json.serialize(results);
+        String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();    }
 }

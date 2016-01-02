@@ -176,24 +176,33 @@ public class ViolationListActivity extends AppCompatActivity
         fabDoor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Report a new door related violation", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent detailIntent = new Intent(mContext, AddViolationActivity.class);
+                detailIntent.putExtra(ViolationDetailFragment.ARG_ITEM_ID, "door");
+                startActivity(detailIntent);
+//                Snackbar.make(view, "Report a new door related violation", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
         fabCarPark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Report a new car park related violation", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent detailIntent = new Intent(mContext, AddViolationActivity.class);
+                detailIntent.putExtra(ViolationDetailFragment.ARG_ITEM_ID, "car");
+                startActivity(detailIntent);
+//                Snackbar.make(view, "Report a new car park related violation", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
         fabRamp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Report a new ramp related violation", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent detailIntent = new Intent(mContext, AddViolationActivity.class);
+                detailIntent.putExtra(ViolationDetailFragment.ARG_ITEM_ID, "ramp");
+                startActivity(detailIntent);
+//                Snackbar.make(view, "Report a new ramp related violation", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
