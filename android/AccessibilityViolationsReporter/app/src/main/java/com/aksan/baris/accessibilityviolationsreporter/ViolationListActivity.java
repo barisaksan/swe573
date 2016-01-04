@@ -42,7 +42,7 @@ public class ViolationListActivity extends AppCompatActivity
     private View.OnClickListener newReportClickListener;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_violation_app_bar);
         mContext = this.getApplicationContext();
@@ -198,8 +198,12 @@ public class ViolationListActivity extends AppCompatActivity
         findViewById(R.id.search_menu_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Search violations", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "Search violations", Snackbar.LENGTH_LONG)
+                //        .setAction("Action", null).show();
+
+                ((ViolationListFragment) getSupportFragmentManager()
+                        .findFragmentById(R.id.violation_list))
+                        .onCreate(savedInstanceState);
             }
         });
 

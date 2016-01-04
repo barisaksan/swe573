@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.location.Address;
 import android.location.Criteria;
@@ -20,15 +21,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.GoogleMapsRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Location;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -122,8 +126,9 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
                 Violation v = new Violation();
                 v.setDescription(desc);
 
+                v.setReporter(UserRef.user);
+
                 //TODO:
-                v.setReporter("barisaksan");
                 v.setType("ramp");
 
                 Location l = new Location();
@@ -206,7 +211,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
         //TODO
     }
 
-    class AddViolationTask extends AsyncTask<String, Void, JSONArray> {
+    class AddViolationTask extends AsyncTask<String, Void, String> {
 
         Activity activity;
         Violation violation;
@@ -217,7 +222,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
             this.violation = v;
         }
 
-        protected JSONArray doInBackground(String... urls) {
+        protected String doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
             ObjectMapper mapper = new ObjectMapper();
 
@@ -233,7 +238,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
                 AddViolationPhotos addViolationPhotos = new AddViolationPhotos(activity, violationId);
                 addViolationPhotos.doInBackground();
 
-                return new JSONArray();
+                return violationId;
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -243,7 +248,11 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return new JSONArray();
+            return "";
+        }
+
+        protected void onPostExecute(String result) {
+            NavUtils.navigateUpFromSameTask(activity);
         }
     }
 

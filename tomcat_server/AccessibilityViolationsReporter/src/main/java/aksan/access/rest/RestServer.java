@@ -118,7 +118,7 @@ public class RestServer {
     public Response getCommentsByViolation(@PathParam("id") String id) throws UnknownHostException {
 
         DBCollection collection = db.getCollection("comments");
-        DBCursor results = collection.find(new BasicDBObject("violation_id", id));
+        DBCursor results = collection.find(new BasicDBObject("violationId", id));
         results.sort(new BasicDBObject("uploadDate", 1));
         String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();

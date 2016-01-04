@@ -13,7 +13,7 @@ public class Violation {
 
     @Override
     public String toString() {
-        String str = type + "violation " + " | " + location.toString() + " | " + description;
+        String str = type + " violation " + " | " + location.toString() + " | " + description;
         return str;
     }
 

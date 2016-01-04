@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -123,6 +124,9 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         GetViolationImagesTask i = new GetViolationImagesTask(this, getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID));
         i.execute();
+
+        GetViolationCommentsTask c = new GetViolationCommentsTask(this, getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID));
+        c.execute();
     }
 
     @Override
@@ -325,6 +329,13 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
             return new JSONArray();
         }
 
+        private View getSeperator(int width, int height) {
+            View separator = new View(activity);
+            separator.setLayoutParams(new Toolbar.LayoutParams(width, height));
+            separator.setBackgroundColor(Color.DKGRAY);
+            return separator;
+        }
+
         protected void onPostExecute(JSONArray result) {
 
             for (int x = 0; x < result.length(); x++) {
@@ -337,8 +348,11 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
                     time.setText(result.getJSONObject(x).getString("time"));
                     LinearLayout nsv = (LinearLayout)activity.findViewById(R.id.view_comments);
                     nsv.addView(user);
+                    nsv.addView(getSeperator(nsv.getWidth(), 2));
                     nsv.addView(comment);
+                    nsv.addView(getSeperator(nsv.getWidth(), 2));
                     nsv.addView(time);
+                    nsv.addView(getSeperator(nsv.getWidth(), 2));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -384,6 +398,13 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
             return null;
         }
 
+        private View getSeperator(int width, int height) {
+            View separator = new View(activity);
+            separator.setLayoutParams(new Toolbar.LayoutParams(width, height));
+            separator.setBackgroundColor(Color.DKGRAY);
+            return separator;
+        }
+
         protected void onPostExecute(Comment result) {
             TextView user = new TextView(activity);
             user.setText(result.getUser());
@@ -393,8 +414,11 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
             time.setText(result.getTime());
             LinearLayout nsv = (LinearLayout)activity.findViewById(R.id.view_comments);
             nsv.addView(user);
+            nsv.addView(getSeperator(nsv.getWidth(), 2));
             nsv.addView(comment);
+            nsv.addView(getSeperator(nsv.getWidth(), 2));
             nsv.addView(time);
+            nsv.addView(getSeperator(nsv.getWidth(), 2));
 
             EditText newComment = (EditText)activity.findViewById(R.id.add_comment);
             newComment.setText("");
