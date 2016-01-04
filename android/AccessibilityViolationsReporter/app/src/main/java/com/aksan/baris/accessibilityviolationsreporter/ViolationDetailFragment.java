@@ -114,7 +114,7 @@ public class ViolationDetailFragment extends Fragment implements OnMapReadyCallb
 
         Activity activity;
         String id;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationTask(Activity activity, String id) {
             this.activity = activity;

@@ -1,0 +1,19 @@
+@startuml
+
+:user: -right-> (Create new issue)
+:user: -right-> (Add comment and photo)
+:user: -right-> (Rank issue)
+:user: -right-> (Tag issue)
+:user: -right-> (Mark issue as fixed)
+:user: -right-> (Follow issue)
+:user: -right-> (See accessibility docs)
+:user: -right-> (Search issues)
+:user: -right-> (Share issue)
+(Share issue) <- (Share on Twitter)
+(Follow issue) -> (Register for updates)
+(Add comment and photo) -> (Edit issue)
+(Rank issue) -> (Edit issue)
+(Tag issue) -> (Edit issue)
+(Mark issue as fixed) -> (Edit issue)
+
+@enduml

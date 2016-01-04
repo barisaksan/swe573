@@ -1,23 +1,28 @@
 @startuml
 
-'TODO
+title Create Violation
 
-title Create Issue
+actor User
+participant LoginActivity
+participant ViolationListActivity
+participant AddViolationActivity
+participant ServerGetViolationsHandler
+participant ServerPostViolationsHandler
 
-User->App: Search Issues (nearby)
-App->Server: Get Issues
-note right of Server: Server forms a list of issues
-Server->App: List of issues
-App->User: Show List of Issues
-User->App: Select Issue
-App->Server: Get Issue Details
-note right of Server: Server forms a list of issues
-Server->App: Issue Details
-App->User: Issue Details
-User->App: Rank Issue
-App->Server: Rank Issue
-User->App: Share Issue
-App->Server: Share Issue
-Server->Twitter: Share Issue
+User->LoginActivity: Login
+LoginActivity->ServerAuthModule: Check Auth
+ServerAuthModule->LoginActivity: Auth Approved
+LoginActivity->ViolationListActivity: Start Activity
+ViolationListActivity->ServerGetViolationsHandler: Get Violations
+note right of ServerGetViolationsHandler: Server forms a list of violations
+ServerGetViolationsHandler->ViolationListActivity: Return Violations
+User->ViolationListActivity: Create Violation
+ViolationListActivity->AddViolationActivity: Start Activity
+note left of User: Users enter violation details
+User->AddViolationActivity: Create Violation
+AddViolationActivity->ServerPostViolationsHandler: Create Violation
+note right of ServerPostViolationsHandler: Server enters new violation to database
+ServerPostViolationsHandler->AddViolationActivity: Violation Id
+AddViolationActivity->ViolationListActivity: Display Violations
 
 @enduml

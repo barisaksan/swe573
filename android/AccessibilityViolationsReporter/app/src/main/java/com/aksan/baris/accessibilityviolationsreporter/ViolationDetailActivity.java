@@ -76,7 +76,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Select the type of violation", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Edit violation", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -174,7 +174,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationTask(Activity activity, String id) {
             this.activity = activity;
@@ -269,7 +269,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationImagesTask(Activity activity, String id) {
             this.activity = activity;
@@ -304,7 +304,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationCommentsTask(Activity activity, String id) {
             this.activity = activity;
@@ -365,7 +365,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
         Activity activity;
         String id;
         Comment comment;
-        String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/comments/";
+        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/comments/";
 
         public AddViolationCommentTask(Activity activity, String id, Comment c) {
             this.activity = activity;

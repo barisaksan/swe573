@@ -215,7 +215,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
 
         Activity activity;
         Violation violation;
-        String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest";
+        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest";
 
         public AddViolationTask(Activity activity, Violation v) {
             this.activity = activity;
@@ -260,7 +260,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
 
         String violationId;
         Activity activity;
-        String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest";
+        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest";
 
         public AddViolationPhotos(Activity activity, String violationId) {
             this.activity = activity;

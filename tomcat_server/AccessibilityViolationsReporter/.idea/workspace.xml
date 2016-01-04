@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ccfcd21-42ec-4ea7-959e-3df0721d4c76" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/data/journal/j._0" afterPath="$PROJECT_DIR$/../../mongodb/data/journal/j._0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/data/journal/lsn" afterPath="$PROJECT_DIR$/../../mongodb/data/journal/lsn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aksan/access/rest/RestServer.class" afterPath="$PROJECT_DIR$/target/classes/aksan/access/rest/RestServer.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/debug/res/values/google_maps_api.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/debug/res/values/accessible_city_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/AddViolationActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/AddViolationActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailFragment.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListFragment.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/log/mongo.log" afterPath="$PROJECT_DIR$/../../mongodb/log/mongo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java" afterPath="$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java" />
     </list>
     <ignored path="AccessibilityViolationReporter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,18 +29,7 @@
     <favorites_list name="AccessibilityViolationReporter" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RestServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23561947">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -194,14 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -567,8 +547,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -580,14 +560,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48986125" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18488745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18488745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43649948" sideWeight="0.49571276" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43649948" sideWeight="0.49571276" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -632,8 +612,14 @@
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -646,7 +632,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,7 +718,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -751,7 +817,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +865,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +913,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,14 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,11 +1205,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26666668">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23561947">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1366#1370#0" expanded="false" />
+            <element signature="method#getViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#1750#1754#0" expanded="false" />
+            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
+            <element signature="e#2384#2388#0" expanded="false" />
+            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
+            <element signature="e#3000#3004#0" expanded="false" />
+            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
+            <element signature="e#3667#3671#0" expanded="false" />
+            <element signature="method#getViolationsNearby#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4338#4342#0" expanded="false" />
+            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#4814#4818#0" expanded="false" />
+            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#5288#5292#0" expanded="false" />
+            <element signature="method#getPhotosByViolation#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6046#6051#0" expanded="false" />
+            <element signature="method#postViolationsImage#0;class#RestServer#0" expanded="false" />
+            <element signature="e#6744#6749#0" expanded="false" />
+            <element signature="method#postViolationsComment#0;class#RestServer#0" expanded="false" />
+            <element signature="e#7657#7662#0" expanded="false" />
+            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8578#8582#0" expanded="false" />
+            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#8781#8788#0" expanded="false" />
+            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9332#9336#0" expanded="false" />
+            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
+            <element signature="e#9652#9656#0" expanded="false" />
+            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10050#10054#0" expanded="false" />
+            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
+            <element signature="e#10379#10383#0" expanded="false" />
+            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
+            <element signature="e#10782#10786#0" expanded="false" />
+            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
+            <element signature="e#11108#11112#0" expanded="false" />
+            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

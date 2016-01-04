@@ -1,0 +1,8 @@
+<resources>
+    <string name="accessible_city_server" templateMergeStrategy="preserve" translatable="false">
+        http://192.168.1.109:8080/
+    </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCVm48aVuNHpAseveWSixshemDHL6G5New
+    </string>
+</resources>
