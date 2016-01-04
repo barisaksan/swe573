@@ -1,14 +1,11 @@
-package com.aksan.baris.accessibilityviolationsreporter.Violation;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+package aksan.access.rest;
 
 /**
  * Created by baris on 24.11.2015.
  */
 public class Comment {
 
-    MongodbId _id;
+    String _id;
     String violationId;
     String user;
     String comment;
@@ -18,11 +15,11 @@ public class Comment {
         return "[" + time + "]" + ": " + user + " : " + comment;
     }
 
-    public MongodbId get_id() {
+    public String get_id() {
         return _id;
     }
 
-    public void set_id(MongodbId _id) {
+    public void set_id(String _id) {
         this._id = _id;
     }
 

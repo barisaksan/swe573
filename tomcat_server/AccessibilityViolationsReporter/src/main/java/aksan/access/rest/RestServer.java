@@ -171,7 +171,30 @@ public class RestServer {
         return Response.status(200).entity(output).build();
     }
 
-	@POST
+    @POST
+    @Path("/comments")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response postViolationsComment(Comment comment) {
+        try {
+            DBCollection collection = db.getCollection("comments");
+            ObjectMapper mapper = new ObjectMapper();
+            DBObject dbo = (DBObject) JSON.parse(mapper.writeValueAsString(comment));
+            collection.insert(dbo);
+            DBObject o = db.getCollection("comments").findOne(dbo);
+            return Response.status(201).entity(o.get("_id").toString()).build();
+        } catch (MongoException e) {
+            e.printStackTrace();
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return Response.status(200).entity("ERROR").build();
+    }
+
+    @POST
     @Path("/violations")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response postViolations(Violation newViolation) {
@@ -197,19 +220,24 @@ public class RestServer {
 	@PUT
     @Path("/violations/{id}")
     public Response putViolations(@PathParam("id") String msg) {
- 
+
 		String output = "Jersey put : " + msg;
- 
+
 		return Response.status(200).entity(output).build();
 	}
 	
 	@DELETE
     @Path("/violations/{id}")
-    public Response deleteViolations(@PathParam("id") String msg) {
- 
-		String output = "Jersey delete : " + msg;
- 
-		return Response.status(200).entity(output).build();
+    public Response deleteViolations(@PathParam("id") String id) {
+        try {
+            DBCollection collection = db.getCollection("violations");
+            WriteResult results = collection.remove(new BasicDBObject("_id", new ObjectId(id)));
+            String serialize = JSON.serialize(results);
+            return Response.status(200).entity(serialize).build();
+        }
+        catch (Exception e) {
+            return Response.status(200).entity(new JSONArray().toString()).build();
+        }
 	}
 
     @GET

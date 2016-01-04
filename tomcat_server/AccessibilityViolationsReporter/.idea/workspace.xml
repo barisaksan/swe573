@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ccfcd21-42ec-4ea7-959e-3df0721d4c76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/debug/res/values/google_maps_api.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/LocationFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/MapsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/Violation/GoogleMapsRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/Violation/UserRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/activity_maps.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/fragment_map.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/release/res/values/google_maps_api.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/Camera2BasicFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/CameraActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/CommentListFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout-land/fragment_camera2_basic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/activity_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/fragment_camera2_basic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/fragment_comment_list.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/data/journal/j._0" afterPath="$PROJECT_DIR$/../../mongodb/data/journal/j._0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/data/journal/lsn" afterPath="$PROJECT_DIR$/../../mongodb/data/journal/lsn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aksan/access/rest/RestServer.class" afterPath="$PROJECT_DIR$/target/classes/aksan/access/rest/RestServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/app.iml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/build.gradle" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/AddViolationActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/AddViolationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/LoginActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/Violation/Violation.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/Violation/Violation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailFragment.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationDetailFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListActivity.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListFragment.java" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/java/com/aksan/baris/accessibilityviolationsreporter/ViolationListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/content_add_violation.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/content_add_violation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/fragment_violation_detail.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/layout/fragment_violation_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../../android/AccessibilityViolationsReporter/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb/log/mongo.log" afterPath="$PROJECT_DIR$/../../mongodb/log/mongo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java" afterPath="$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java" afterPath="$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java" />
     </list>
     <ignored path="AccessibilityViolationReporter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,43 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RestServer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6117257">
-              <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="41" />
-              <folding>
-                <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-                <element signature="e#1366#1370#0" expanded="false" />
-                <element signature="e#1750#1754#0" expanded="false" />
-                <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-                <element signature="e#2384#2388#0" expanded="false" />
-                <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-                <element signature="e#3000#3004#0" expanded="false" />
-                <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-                <element signature="e#4338#4342#0" expanded="false" />
-                <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-                <element signature="e#4815#4819#0" expanded="false" />
-                <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-                <element signature="e#6742#6747#0" expanded="false" />
-                <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-                <element signature="e#7663#7667#0" expanded="false" />
-                <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-                <element signature="e#7868#7875#0" expanded="false" />
-                <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-                <element signature="e#8084#8088#0" expanded="false" />
-                <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-                <element signature="e#8404#8408#0" expanded="false" />
-                <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-                <element signature="e#8802#8806#0" expanded="false" />
-                <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-                <element signature="e#9131#9135#0" expanded="false" />
-                <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-                <element signature="e#9534#9538#0" expanded="false" />
-                <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-                <element signature="e#9860#9864#0" expanded="false" />
-                <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Violation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.69142854">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,6 +84,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/aksan/access/rest/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java" />
       </list>
     </option>
@@ -298,11 +256,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baris\Desktop\swe573\swe573\tomcat_server\AccessibilityViolationsReporter\src\main\java\aksan\access\rest" />
+      <recent name="C:\Users\baris\Desktop\swe573\swe573\tomcat_server\AccessibilityViolationsReporter" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="aksan.access.rest" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\baris\Desktop\swe573\swe573\tomcat_server\AccessibilityViolationsReporter" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.tomcat">
@@ -623,7 +582,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,7 +602,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5912487" sideWeight="0.49571276" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5912487" sideWeight="0.49571276" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -663,7 +622,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -672,50 +639,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.vaio.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -761,38 +689,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,38 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -890,38 +756,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,38 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,17 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7344064">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding>
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#625#626#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.472103">
@@ -1215,42 +1008,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/RestServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6117257">
-          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="41" />
-          <folding>
-            <element signature="method#RestServer#0;class#RestServer#0" expanded="false" />
-            <element signature="e#1366#1370#0" expanded="false" />
-            <element signature="e#1750#1754#0" expanded="false" />
-            <element signature="method#getViolations#1;class#RestServer#0" expanded="false" />
-            <element signature="e#2384#2388#0" expanded="false" />
-            <element signature="method#getViolationsSearch#0;class#RestServer#0" expanded="false" />
-            <element signature="e#3000#3004#0" expanded="false" />
-            <element signature="method#getViolationsSearch#1;class#RestServer#0" expanded="false" />
-            <element signature="e#4338#4342#0" expanded="false" />
-            <element signature="method#getCommentsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#4815#4819#0" expanded="false" />
-            <element signature="method#getRatingsByViolation#0;class#RestServer#0" expanded="false" />
-            <element signature="e#6742#6747#0" expanded="false" />
-            <element signature="method#postViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7663#7667#0" expanded="false" />
-            <element signature="method#putViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#7868#7875#0" expanded="false" />
-            <element signature="method#deleteViolations#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8084#8088#0" expanded="false" />
-            <element signature="method#getUsers#0;class#RestServer#0" expanded="false" />
-            <element signature="e#8404#8408#0" expanded="false" />
-            <element signature="method#getUsers#1;class#RestServer#0" expanded="false" />
-            <element signature="e#8802#8806#0" expanded="false" />
-            <element signature="method#getComments#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9131#9135#0" expanded="false" />
-            <element signature="method#getComments#1;class#RestServer#0" expanded="false" />
-            <element signature="e#9534#9538#0" expanded="false" />
-            <element signature="method#getRatings#0;class#RestServer#0" expanded="false" />
-            <element signature="e#9860#9864#0" expanded="false" />
-            <element signature="method#getRatings#1;class#RestServer#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aksan/access/rest/Violation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69142854">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

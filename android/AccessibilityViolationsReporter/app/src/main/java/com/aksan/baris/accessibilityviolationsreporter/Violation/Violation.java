@@ -4,16 +4,12 @@ package com.aksan.baris.accessibilityviolationsreporter.Violation;
  * Created by baris on 17.11.2015.
  */
 public class Violation {
-    /*
-        public Violation(JSONObject jsonViolation) throws JSONException {
-            id = jsonViolation.getJSONObject("_id").getString("$oid");
-            type = jsonViolation.getString("type");
-            description = jsonViolation.getString("description");
-            reporter = jsonViolation.getString("reporter");
-        }
-    */
 
-    //JSONObject jsonViolation; id = jsonViolation.getJSONObject("_id").getString("$oid");
+    MongodbId _id;
+    String type;
+    Location location;
+    String description;
+    String reporter;
 
     @Override
     public String toString() {
@@ -28,12 +24,6 @@ public class Violation {
     public void set_id(MongodbId _id) {
         this._id = _id;
     }
-
-    MongodbId _id;
-    String type;
-    Location location;
-    String description;
-    String reporter;
 
     public void setType(String type) {
         this.type = type;
@@ -66,35 +56,6 @@ public class Violation {
     public String getDescription() {
         return description;
     }
-
-    //String id;
-    //ViolationType type;
-    //Location location;
-    //Rating rating;
-    //ViolationProperty[] properties;
-    //Photo[] Photos;
-    //User reporter;
-/*
-    //TODO: implement classes
-    class Rating {}
-    class ViolationProperty {
-
-    }
-
-    class Photo {
-        String alt;
-        String name;
-        String url;
-        String violationId;
-    }
-
-    public static enum ViolationType {
-        RAMP,
-        SIDEWALK,
-        LIGHT,
-        OTHER
-    }
-    */
 }
 
 

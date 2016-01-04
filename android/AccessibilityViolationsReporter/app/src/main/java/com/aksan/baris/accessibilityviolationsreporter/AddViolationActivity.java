@@ -247,7 +247,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
         }
     }
 
-    class AddViolationPhotos extends AsyncTask<String, Void, JSONArray> {
+    class AddViolationPhotos extends AsyncTask<String, Void, String> {
 
         String violationId;
         Activity activity;
@@ -258,7 +258,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
             this.violationId = violationId;
         }
 
-        protected JSONArray doInBackground(String... urls) {
+        protected String doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
             try {
@@ -272,15 +272,13 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
                                 .setHeader("Content-Type", "multipart/form-data")
                                 .setBody(encodedPhotoStr)
                                 .execute();
-                return new JSONArray(lFuture.get());
+                return lFuture.get().toString();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
                 e.printStackTrace();
-            } catch (JSONException e) {
-                e.printStackTrace();
             }
-            return new JSONArray();
+            return "";
         }
     }
 }

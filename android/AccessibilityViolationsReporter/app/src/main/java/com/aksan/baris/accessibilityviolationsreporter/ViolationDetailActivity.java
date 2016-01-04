@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -18,10 +19,18 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.Comment;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.GoogleMapsRef;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapsInitializer;
@@ -34,9 +43,12 @@ import com.ning.http.client.Response;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 /**
  * An activity representing a single Violation detail screen. This
@@ -49,19 +61,39 @@ import java.util.concurrent.ExecutionException;
  */
 public class ViolationDetailActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private ViolationDetailActivity mActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_violation_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+        mActivity = this;
         //setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Select the type of violation", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        Button addComment = (Button) findViewById(R.id.add_comment_button);
+        addComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText commentTextView = (EditText)findViewById(R.id.add_comment);
+
+                Comment c = new Comment();
+                c.setComment(commentTextView.getText().toString());
+                c.setUser(UserRef.user);
+                c.setTime(new Date().toString());
+                c.setViolationId(getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID));
+
+                AddViolationCommentTask commentTask = new AddViolationCommentTask(mActivity, getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID), c);
+                commentTask.execute();
             }
         });
 
@@ -80,25 +112,6 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
-
-            /*
-            Bundle arguments = new Bundle();
-            arguments.putString(ViolationDetailFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(ViolationDetailFragment.ARG_ITEM_ID));
-            ViolationDetailFragment fragment = new ViolationDetailFragment();
-            fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.violation_detail_container, fragment)
-                    .commit();
-
-            */
-/*
-            CommentListFragment fragment2 = new CommentListFragment();
-            fragment2.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.view_comments, fragment2)
-                    .commit();
-*/
         }
 
         SupportMapFragment mapFragment = (SupportMapFragment)this.getSupportFragmentManager()
@@ -280,6 +293,111 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
             Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
             ImageView detailImage = (ImageView) activity.findViewById(R.id.detail_image);
             detailImage.setImageBitmap(bmp);
+        }
+    }
+
+    class GetViolationCommentsTask extends AsyncTask<String, Void, JSONArray> {
+
+        Activity activity;
+        String id;
+        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+
+        public GetViolationCommentsTask(Activity activity, String id) {
+            this.activity = activity;
+            this.id = id;
+        }
+
+        protected JSONArray doInBackground(String... urls) {
+            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+            String getViolations = url + id + "/comments";
+            try {
+                Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
+                return new JSONArray(r.getResponseBody());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return new JSONArray();
+        }
+
+        protected void onPostExecute(JSONArray result) {
+
+            for (int x = 0; x < result.length(); x++) {
+                try {
+                    TextView user = new TextView(activity);
+                    user.setText(result.getJSONObject(x).getString("user"));
+                    TextView comment = new TextView(activity);
+                    comment.setText(result.getJSONObject(x).getString("comment"));
+                    TextView time = new TextView(activity);
+                    time.setText(result.getJSONObject(x).getString("time"));
+                    LinearLayout nsv = (LinearLayout)activity.findViewById(R.id.view_comments);
+                    nsv.addView(user);
+                    nsv.addView(comment);
+                    nsv.addView(time);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    class AddViolationCommentTask extends AsyncTask<String, Void, Comment> {
+
+        Activity activity;
+        String id;
+        Comment comment;
+        String baseurl = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/comments/";
+
+        public AddViolationCommentTask(Activity activity, String id, Comment c) {
+            this.activity = activity;
+            this.id = id;
+            this.comment = c;
+        }
+
+        protected Comment doInBackground(String... urls) {
+            AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
+            ObjectMapper mapper = new ObjectMapper();
+
+            try {
+                AsyncHttpClient.BoundRequestBuilder builder = asyncHttpClient.preparePost(baseurl);
+                Future<Response> lFuture = builder
+                        .setBody(mapper.writeValueAsString(comment))
+                        .setHeader("Content-Type", "application/json")
+                        .execute();
+
+                String violationId = lFuture.get().getResponseBody().toString();
+                return comment;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        protected void onPostExecute(Comment result) {
+            TextView user = new TextView(activity);
+            user.setText(result.getUser());
+            TextView comment = new TextView(activity);
+            comment.setText(result.getComment());
+            TextView time = new TextView(activity);
+            time.setText(result.getTime());
+            LinearLayout nsv = (LinearLayout)activity.findViewById(R.id.view_comments);
+            nsv.addView(user);
+            nsv.addView(comment);
+            nsv.addView(time);
+
+            EditText newComment = (EditText)activity.findViewById(R.id.add_comment);
+            newComment.setText("");
         }
     }
 }

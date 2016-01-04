@@ -165,7 +165,8 @@ public class ViolationListFragment extends ListFragment {
     class GetAllViolationsTask extends AsyncTask<String, Void, JSONArray> {
 
         Activity activity;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/nearby/";
+        //String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/nearby/";
+        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
 
         //TODO: get current location
         String currentLocation = "12345,12345";
@@ -176,7 +177,7 @@ public class ViolationListFragment extends ListFragment {
 
         protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
-            String getViolations = url + currentLocation;
+            String getViolations = url;// + currentLocation;
             try {
                 Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
                 return new JSONArray(r.getResponseBody());

@@ -29,6 +29,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -194,7 +196,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        //return email.contains("@");
+        return true;
     }
 
     private boolean isPasswordValid(String password) {
@@ -328,6 +331,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+
+                UserRef.user = mEmail;
+
                 //finish();
                 Intent violationListIntent = new Intent(mContext, ViolationListActivity.class);
                 startActivity(violationListIntent);
