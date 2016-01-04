@@ -2,30 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aksan.baris.accessibilityviolationsreporter">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
     <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
+        android:required="true" />
 
     <permission
-        android:name="com.example.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
-    <uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>
+        android:name="com.aksan.baris.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.aksan.baris.permission.ACCESS_FINE_LOCATION"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.aksan.baris.permission.ACCESS_COARSE_LOCATION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.aksan.baris.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.aksan.baris.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.aksan.baris.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -33,9 +43,24 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!--
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCVm48aVuNHpAseveWSixshemDHL6G5New"/>
+            android:value="AIzaSyCVm48aVuNHpAseveWSixshemDHL6G5New" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
@@ -48,7 +73,10 @@
         <activity
             android:name=".ViolationListActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" >
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </activity>
         <activity
             android:name=".ViolationDetailActivity"
             android:label="@string/title_violation_detail"
@@ -57,6 +85,9 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ViolationListActivity" />
+
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
         </activity>
         <activity
             android:name=".AddViolationActivity"
@@ -66,15 +97,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ViolationListActivity" />
-        </activity>
-        <activity
-            android:name=".CameraActivity"
-            android:label="@string/title_violation_detail"
-            android:parentActivityName=".AddViolationActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AddViolationActivity" />
+
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
         </activity>
     </application>
+
 </manifest>

@@ -18,11 +18,11 @@
             android:layout_height="wrap_content"
             android:text="Description"/>
 
-        <EditText
-            android:layout_width="wrap_content"
+        <EditText android:id="@+id/add_description"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="@string/violation_description"
+            android:text=""
             android:allowUndo="true"/>
 
         <TextView
@@ -30,32 +30,50 @@
             android:layout_height="wrap_content"
             android:text="Location"/>
 
-        <com.google.android.gms.maps.MapView android:id="@+id/mapview"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+        <TextView android:id="@+id/add_location_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"/>
+
+        <TextView android:id="@+id/add_location_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"/>
+
+        <fragment android:id="@+id/add_location"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.design.widget.FloatingActionButton android:id="@+id/pick_location"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:layout_gravity="center" android:layout_margin="@dimen/fab_margin"
+                android:src="@android:drawable/ic_menu_edit"
+                app:layout_anchor="@+id/violation_detail_container" app:layout_anchorGravity="center" />
+
+        </fragment>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Details"/>
 
-        <EditText
-            android:layout_width="wrap_content"
+        <LinearLayout android:id="@+id/add_type_specific_details"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="type specific data"
-            android:allowUndo="true"/>
+            android:orientation="vertical" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tags"/>
 
-        <EditText
-            android:layout_width="wrap_content"
+        <EditText android:id="@+id/add_tags"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="tags"
+            android:text=""
             android:allowUndo="true"/>
 
     </LinearLayout>

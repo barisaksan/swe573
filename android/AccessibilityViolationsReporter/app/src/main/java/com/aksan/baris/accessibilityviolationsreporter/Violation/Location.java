@@ -7,7 +7,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return name + "("+coordinates+")";
+        return name;
     }
 
     String name;

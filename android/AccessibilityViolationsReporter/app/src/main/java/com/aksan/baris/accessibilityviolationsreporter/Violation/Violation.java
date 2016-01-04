@@ -1,7 +1,5 @@
 package com.aksan.baris.accessibilityviolationsreporter.Violation;
 
-import org.json.JSONException;
-
 /**
  * Created by baris on 17.11.2015.
  */
@@ -19,7 +17,7 @@ public class Violation {
 
     @Override
     public String toString() {
-        String str = "[" + type + "]" + " @" + location.toString() + ": " + description;
+        String str = type + "violation " + " | " + location.toString() + " | " + description;
         return str;
     }
 

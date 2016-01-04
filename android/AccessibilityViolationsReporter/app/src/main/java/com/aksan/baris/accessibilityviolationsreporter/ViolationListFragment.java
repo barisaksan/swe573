@@ -4,14 +4,11 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
-import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,13 +17,11 @@ import com.ning.http.client.Response;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -170,7 +165,10 @@ public class ViolationListFragment extends ListFragment {
     class GetAllViolationsTask extends AsyncTask<String, Void, JSONArray> {
 
         Activity activity;
-        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/";
+        String url = "http://192.168.1.109:8080/AccessibilityViolationReporter/rest/violations/nearby/";
+
+        //TODO: get current location
+        String currentLocation = "12345,12345";
 
         public GetAllViolationsTask(Activity activity) {
             this.activity = activity;
@@ -178,7 +176,7 @@ public class ViolationListFragment extends ListFragment {
 
         protected JSONArray doInBackground(String... urls) {
             AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
-            String getViolations = url;
+            String getViolations = url + currentLocation;
             try {
                 Response r = asyncHttpClient.prepareGet(getViolations).execute().get();
                 return new JSONArray(r.getResponseBody());
@@ -200,11 +198,10 @@ public class ViolationListFragment extends ListFragment {
 
             for(int i = 0; i < result.length(); i++){
                 try {
-                        ObjectMapper mapper = new ObjectMapper();
-                        Violation v = mapper.readValue(result.getJSONObject(i).toString(), Violation.class);
-                        list.add(v);
-                        positionToId.put(i, v.get_id().toString());
-
+                    ObjectMapper mapper = new ObjectMapper();
+                    Violation v = mapper.readValue(result.getJSONObject(i).toString(), Violation.class);
+                    list.add(v);
+                    positionToId.put(i, v.get_id().toString());
                 } catch (JSONException e) {
                     e.printStackTrace();
                 } catch (JsonParseException e) {
@@ -215,7 +212,8 @@ public class ViolationListFragment extends ListFragment {
                     e.printStackTrace();
                 }
             }
-            setListAdapter(new ArrayAdapter<Violation>(
+
+            setListAdapter(new ArrayAdapter<>(
                     getActivity(),
                     android.R.layout.simple_list_item_activated_1,
                     list));

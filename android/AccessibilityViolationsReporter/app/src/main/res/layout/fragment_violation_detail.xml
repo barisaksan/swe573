@@ -6,21 +6,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView android:id="@+id/violation_detail"
-        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"/>
+
+    <TextView android:id="@+id/view_description"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textIsSelectable="true"
         tools:context=".ViolationDetailFragment" />
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"/>
+
+    <TextView android:id="@+id/view_location_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"/>
+
+    <TextView android:id="@+id/view_location_coordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"/>
+
+    <fragment android:id="@+id/view_location"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"/>
+
+    <LinearLayout android:id="@+id/view_type_specific_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tags"/>
+
+    <EditText android:id="@+id/view_tags"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Location" />
-
-    <TextView android:id="@+id/violation_location"
-        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
-        tools:context=".ViolationDetailFragment" />
+        android:layout_margin="@dimen/text_margin"
+        android:text=""
+        android:allowUndo="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,9 +67,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Reporter" />
 
-    <TextView android:id="@+id/violation_reporter"
-        style="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:padding="16dp" android:textIsSelectable="true"
+    <TextView android:id="@+id/view_reporter"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textIsSelectable="true"
         tools:context=".ViolationDetailFragment" />
 
     <TextView
@@ -39,8 +81,26 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Comments" />
 
-    <android.support.v4.widget.NestedScrollView android:id="@+id/violation_detail_comments"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+    <android.support.v4.widget.NestedScrollView android:id="@+id/view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add comment" />
+
+    <EditText android:id="@+id/add_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text=""
+        android:allowUndo="true"/>
+
+    <Button android:id="@+id/add_comment_button"
+        android:layout_width="128dp"
+        android:layout_height="32dp" />
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package aksan.access.rest;
 
 import com.mongodb.*;
 import com.mongodb.gridfs.GridFS;
+import com.mongodb.gridfs.GridFSDBFile;
 import com.mongodb.gridfs.GridFSInputFile;
 import com.mongodb.util.JSON;
 import org.apache.commons.configuration.ConfigurationException;
@@ -15,9 +16,10 @@ import org.json.simple.JSONArray;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.*;
+import javax.ws.rs.core.StreamingOutput;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
 import java.util.List;
 
 @Path("/")
@@ -42,6 +44,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("violations");
         DBCursor results = collection.find();
+        results.sort(new BasicDBObject("uploadDate", 1));
         String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
 	}
@@ -53,6 +56,7 @@ public class RestServer {
         try {
             DBCollection collection = db.getCollection("violations");
             DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(id)));
+            results.sort(new BasicDBObject("uploadDate", 1));
             String serialize = JSON.serialize(results);
             return Response.status(200).entity(serialize).build();
         }
@@ -68,6 +72,7 @@ public class RestServer {
         try {
             DBCollection collection = db.getCollection("violations");
             DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId("top")));
+            results.sort(new BasicDBObject("uploadDate", 1));
             String serialize = JSON.serialize(results);
             return Response.status(200).entity(serialize).build();
         }
@@ -83,6 +88,7 @@ public class RestServer {
         try {
             DBCollection collection = db.getCollection("violations");
             DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(keyword)));
+            results.sort(new BasicDBObject("uploadDate", 1));
             String serialize = JSON.serialize(results);
             return Response.status(200).entity(serialize).build();
         }
@@ -98,6 +104,7 @@ public class RestServer {
         try {
             DBCollection collection = db.getCollection("violations");
             DBCursor results = collection.find(new BasicDBObject("_id", new ObjectId(location)));
+            results.sort(new BasicDBObject("uploadDate", 1));
             String serialize = JSON.serialize(results);
             return Response.status(200).entity(serialize).build();
         }
@@ -112,6 +119,7 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("comments");
         DBCursor results = collection.find(new BasicDBObject("violation_id", id));
+        results.sort(new BasicDBObject("uploadDate", 1));
         String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
@@ -122,36 +130,28 @@ public class RestServer {
 
         DBCollection collection = db.getCollection("ratings");
         DBCursor results = collection.find(new BasicDBObject("violation_id", id));
+        results.sort(new BasicDBObject("uploadDate", 1));
         String serialize = JSON.serialize(results);
         return Response.status(200).entity(serialize).build();
     }
 
-	@POST
-    @Path("/violations")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response postViolations(Violation newViolation) {
-        String output = "POST";
-        try {
-            DBCollection collection = db.getCollection("violations");
-            ObjectMapper mapper = new ObjectMapper();
-            DBObject dbo = (DBObject) JSON.parse(mapper.writeValueAsString(newViolation));
-            List<DBObject> list = new ArrayList<DBObject>();
-            list.add(dbo);
-            collection.insert(list);
-            String result = "Violation saved : " + newViolation;
-            return Response.status(201).entity(result).build();
-        } catch (MongoException e) {
-            e.printStackTrace();
-            output = "ERROR";
-        } catch (JsonGenerationException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @GET
+    @Path("/violations/{id}/photos")
+    @Produces("image/jpeg")
+    public Response getPhotosByViolation(@PathParam("id") String violationId) throws UnknownHostException {
+        GridFS gfsPhoto = new GridFS(db, "photos");
+        final List<GridFSDBFile> photos = gfsPhoto.find(violationId);
+        StreamingOutput streamingOutput = new StreamingOutput() {
+            public void write(OutputStream output) throws IOException, WebApplicationException {
+                try {
+                    photos.get(0).writeTo(output);
+                } catch (Exception e) {
+                    throw new WebApplicationException(e);
+                }
+            }
+        };
 
-        return Response.status(200).entity(output).build();
+        return Response.status(200).entity(streamingOutput).build();
     }
 
     @POST
@@ -160,38 +160,40 @@ public class RestServer {
     public Response postViolationsImage(
             //@FormDataParam("file") InputStream uploadedInputStream,
             //@FormDataParam("file") FormDataContentDisposition fileDetail
-            String multipart) {
-        GridFS gfsPhoto = new GridFS(db, "photo");
-        //GridFSInputFile gfsFile = gfsPhoto.createFile(uploadedInputStream);
-        GridFSInputFile gfsFile = gfsPhoto.createFile(multipart.getBytes());
-        //gfsFile.setFilename(id);
-        gfsFile.setFilename("baris");
+            @PathParam("id") String violationId,
+            String photo) {
+        GridFS gfsPhoto = new GridFS(db, "photos");
+        GridFSInputFile gfsFile = gfsPhoto.createFile(photo.getBytes());
+        gfsFile.setFilename(violationId);
         gfsFile.save();
 
-        String output = "File uploaded to database : " + "photo/" + "baris";
+        String output = "File uploaded to database : " + "photo/" + violationId;
         return Response.status(200).entity(output).build();
     }
 
-    // save uploaded file to new location
-    private void writeToFile(InputStream uploadedInputStream,
-                             String uploadedFileLocation) {
+	@POST
+    @Path("/violations")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response postViolations(Violation newViolation) {
         try {
-            OutputStream out = new FileOutputStream(new File(
-                    uploadedFileLocation));
-            int read = 0;
-            byte[] bytes = new byte[1024];
-
-            out = new FileOutputStream(new File(uploadedFileLocation));
-            while ((read = uploadedInputStream.read(bytes)) != -1) {
-                out.write(bytes, 0, read);
-            }
-            out.flush();
-            out.close();
+            DBCollection collection = db.getCollection("violations");
+            ObjectMapper mapper = new ObjectMapper();
+            DBObject dbo = (DBObject) JSON.parse(mapper.writeValueAsString(newViolation));
+            collection.insert(dbo);
+            DBObject o = db.getCollection("violations").findOne(dbo);
+            return Response.status(201).entity(o.get("_id").toString()).build();
+        } catch (MongoException e) {
+            e.printStackTrace();
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return Response.status(200).entity("ERROR").build();
     }
-	
+
 	@PUT
     @Path("/violations/{id}")
     public Response putViolations(@PathParam("id") String msg) {
