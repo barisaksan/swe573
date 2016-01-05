@@ -1,0 +1,1 @@
+{indexes:[{ "v" : 5.170855711902991e+170, "key" : { "_id" : 5.170855711902991e+170 }, "ns" : "access.photos.files", "name" : "_id_" }, { "v" : 2.002906119253738e-76, "key" : { "filename" : 2.002906119253738e-76, "uploadDate" : 2.002906119253738e-76 }, "ns" : "access.photos.files", "name" : "filename_1_uploadDate_1" }]}

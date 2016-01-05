@@ -1,0 +1,1 @@
+{indexes:[{ "v" : 5.170855711902991e+170, "key" : { "_id" : 5.170855711902991e+170 }, "ns" : "access.photos.chunks", "name" : "_id_" }, { "v" : 2.002906119253738e-76, "key" : { "files_id" : 2.002906119253738e-76, "n" : 2.002906119253738e-76 }, "unique" : true, "ns" : "access.photos.chunks", "name" : "files_id_1_n_1" }]}
