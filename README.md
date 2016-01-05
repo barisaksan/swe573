@@ -1,6 +1,6 @@
 # SWE573 course project
 
-## Accessibility Violations Tracker
+## AccessibleCity
 
 This is an android application designed and developed for BOUN SWE 573 course project.
 
