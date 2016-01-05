@@ -32,6 +32,7 @@ import android.widget.Toast;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.GoogleMapsRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Location;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.ServerRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -215,7 +216,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
 
         Activity activity;
         Violation violation;
-        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest";
+        String baseurl = ServerRef.server + "AccessibilityViolationReporter/rest";
 
         public AddViolationTask(Activity activity, Violation v) {
             this.activity = activity;
@@ -260,7 +261,7 @@ implements OnMapReadyCallback, LocationFragment.OnFragmentInteractionListener {
 
         String violationId;
         Activity activity;
-        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest";
+        String baseurl = ServerRef.server + "AccessibilityViolationReporter/rest";
 
         public AddViolationPhotos(Activity activity, String violationId) {
             this.activity = activity;

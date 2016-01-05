@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.GoogleMapsRef;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.ServerRef;
 import com.aksan.baris.accessibilityviolationsreporter.dummy.DummyContent;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -114,7 +115,7 @@ public class ViolationDetailFragment extends Fragment implements OnMapReadyCallb
 
         Activity activity;
         String id;
-        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
+        String url = ServerRef.server + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationTask(Activity activity, String id) {
             this.activity = activity;

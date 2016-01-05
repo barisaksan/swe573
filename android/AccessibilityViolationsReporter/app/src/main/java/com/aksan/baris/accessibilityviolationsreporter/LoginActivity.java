@@ -29,6 +29,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.ServerRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
 
 import java.util.ArrayList;
@@ -159,6 +160,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        ServerRef.server = ((EditText) findViewById(R.id.server_path)).getText().toString();
 
         boolean cancel = false;
         View focusView = null;

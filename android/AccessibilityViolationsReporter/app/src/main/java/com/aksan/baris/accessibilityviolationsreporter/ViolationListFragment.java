@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.aksan.baris.accessibilityviolationsreporter.Violation.ServerRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -166,7 +167,7 @@ public class ViolationListFragment extends ListFragment {
 
         Activity activity;
         //String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/nearby/";
-        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
+        String url = ServerRef.server + "AccessibilityViolationReporter/rest/violations/";
 
         //TODO: get current location
         String currentLocation = "12345,12345";

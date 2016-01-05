@@ -63,6 +63,16 @@
 
             </android.support.design.widget.TextInputLayout>
 
+            <EditText
+                android:id="@+id/server_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/accessible_city_server"
+                android:inputType="text"
+                android:text="@string/accessible_city_server"
+                android:maxLines="1"
+                android:singleLine="true" />
+
             <Button
                 android:id="@+id/email_sign_in_button"
                 style="?android:textAppearanceSmall"

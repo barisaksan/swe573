@@ -28,6 +28,7 @@ import android.widget.TextView;
 
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Comment;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.GoogleMapsRef;
+import com.aksan.baris.accessibilityviolationsreporter.Violation.ServerRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.UserRef;
 import com.aksan.baris.accessibilityviolationsreporter.Violation.Violation;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -174,7 +175,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
+        String url = ServerRef.server + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationTask(Activity activity, String id) {
             this.activity = activity;
@@ -269,7 +270,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
+        String url = ServerRef.server + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationImagesTask(Activity activity, String id) {
             this.activity = activity;
@@ -304,7 +305,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
 
         Activity activity;
         String id;
-        String url = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/violations/";
+        String url = ServerRef.server + "AccessibilityViolationReporter/rest/violations/";
 
         public GetViolationCommentsTask(Activity activity, String id) {
             this.activity = activity;
@@ -365,7 +366,7 @@ public class ViolationDetailActivity extends FragmentActivity implements OnMapRe
         Activity activity;
         String id;
         Comment comment;
-        String baseurl = getString(R.string.accessible_city_server) + "AccessibilityViolationReporter/rest/comments/";
+        String baseurl = ServerRef.server + "AccessibilityViolationReporter/rest/comments/";
 
         public AddViolationCommentTask(Activity activity, String id, Comment c) {
             this.activity = activity;
