@@ -8,12 +8,12 @@ function drawMap () {
 
   var violations;
 
-  $.get( "http://localhost:8080/AccessibilityViolationReporter/rest/violations/", function( violationsResult ) {
-      violations = violationsResult;
-  });
+  $.get( "http://aksan.duckdns.org:8080/AccessibilityViolationReporter/rest/violations/", function( violationsResult ) {
+      violations = JSON.parse(violationsResult);
 
-  $.each( violations, function( index, value ) {
-    data.addRow([value.location.coordinates, value.location.name,   'green' ]);
+    $.each( violations, function( index, value ) {
+      data.addRow([value.location.coordinates, value.location.name,   'green' ]);
+    });
   });
 
 /*
